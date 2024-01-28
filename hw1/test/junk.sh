@@ -59,7 +59,11 @@ fi
 
 # Move the files to the ~/.junk directory
 for file in "$@"; do
-  mv "$file" ~/.junk/
+  if [ -e "$file" ]; then
+    mv "$file" ~/.junk/
+  else
+    echo "Warning: '$file' not found."
+  fi
 done
 
 exit 0
