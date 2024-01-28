@@ -57,7 +57,7 @@ fi
 
 
 
-# Move the files to the ~/.junk directory
+# Move the files to the ~/.junk directory if file not found get warning
 for file in "$@"; do
   if [ -e "$file" ]; then
     mv "$file" ~/.junk/
