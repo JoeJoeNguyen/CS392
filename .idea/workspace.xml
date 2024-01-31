@@ -41,7 +41,7 @@
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/joejoe/github/CS392&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/joenguyen/CS392&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -51,6 +51,21 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="CS392" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="CS392" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -65,6 +80,13 @@
       <workItem from="1706384013017" duration="219000" />
       <workItem from="1706384237203" duration="10363000" />
       <workItem from="1706430899307" duration="9579000" />
+      <workItem from="1706493615024" duration="137000" />
+      <workItem from="1706493757057" duration="258000" />
+      <workItem from="1706494022357" duration="15000" />
+      <workItem from="1706494043324" duration="11000" />
+      <workItem from="1706494080421" duration="1342000" />
+      <workItem from="1706556147517" duration="999000" />
+      <workItem from="1706727924163" duration="2404000" />
     </task>
     <servers />
   </component>

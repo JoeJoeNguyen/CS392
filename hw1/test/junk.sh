@@ -16,6 +16,10 @@ exit_abnormal() {
   usage
   exit 1
 }
+
+# Check if the ~/.junk directory exists and create it if it does not
+mkdir -p $HOME/.junk
+
 # Initialize a counter for the number of options enabled
 option_counter=0
 
@@ -48,8 +52,7 @@ if [ $option_counter -gt 1 ] || ([ $option_counter -gt 0 ] && (( $# > 0 ))); the
 fi
 
 
-# Check if the ~/.junk directory exists and create it if it does not
-mkdir -p ~/.junk
+
 
 while getopts ":hlp" options; do
   case "${options}" in
