@@ -1,4 +1,4 @@
-// TEAM MEMBERS: Son Nguyen, Michael Hanna
+// TEAM MEMBERS: Son Nguyen
 // LEAD PROGRAMMER: Son Nguyen
 
 #include <stdio.h>
@@ -39,26 +39,43 @@ int main (int argc, char **argv) {
 	}
 
 
+    int column_index = atoi(argv[4]);
+    int num_lines = 0;
+	// TODO: read all lines from the file, write the column the user 
+	// selected to the first output file
+	char line[200] = "";
+	/*while(fgets(line, 200, in)){
+        printf("%s", line);
+	}*/
 
-    FILE* out2 = fopen(argv[3], "r")  ;
+    while(fgets(line, 200, in)){
+        long int column_value;
+        char format[50];
+        sprintf(format, "%%%d$ld", column_index); // create format string
+        sscanf(line, format, &column_value); // use format string
+        fprintf(out, "%ld\n", column_value);
+        num_lines++;
+    }
+
+
+    printf("%d", 2/3);
+    fclose(out);
+    FILE* out2 = fopen(argv[3], "w")  ;
     if (out2 == NULL) {
         printf("%s", "The output file 2 cannot be written to/opened!");
         exit(-1);
     }
 
-	// TODO: read all lines from the file, write the column the user 
-	// selected to the first output file
-	char line[200] = "";
-	while(fgets(line, 200, in)){
-        printf("%s", line);
-	}
-
+    rewind(in);
+    int start_line = (num_lines * 2)/3;//start at the last third of the input_file
+    int current_line = 0;
     while(fgets(line, 200, in)){
-
+        if(current_line >= start_line){
+            fprintf(out2, "%s", line);
+        }
+        current_line++;
     }
-
-	fclose(in);
-    fclose(out);
+    fclose(in);
     fclose(out2);
 
 	// TODO: figure out the number of lines in the file and write the last 
