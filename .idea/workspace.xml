@@ -11,10 +11,9 @@
   <component name="ChangeListManager">
     <list default="true" id="2d970ad8-3ce6-4f4e-b1d1-aa64934c7a1a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/labs/lab3.files" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/labs/lab3_files" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/labs/lab3_files.c" beforeDir="false" afterPath="$PROJECT_DIR$/labs/lab3_files.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/labs/output2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/labs/output2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hw2/hw2_starter_code/bubble.c" beforeDir="false" afterPath="$PROJECT_DIR$/hw2/hw2_starter_code/bubble.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hw2/hw2_starter_code/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/hw2/hw2_starter_code/main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hw2/hw2_starter_code/utils.c" beforeDir="false" afterPath="$PROJECT_DIR$/hw2/hw2_starter_code/utils.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,9 +28,9 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/hw1/test/junk.sh" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/interface_lab1.sh" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/lab2_fn_pointers (1).c" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/lab2_fn_pointers.c" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/hw2/hw2_starter_code/bubble.c" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/hw2/hw2_starter_code/main.c" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/hw2/hw2_starter_code/utils.c" root0="SKIP_INSPECTION" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -123,6 +122,8 @@
       <workItem from="1707159999118" duration="3587000" />
       <workItem from="1707505305501" duration="3614000" />
       <workItem from="1707750770614" duration="4857000" />
+      <workItem from="1707781124213" duration="9485000" />
+      <workItem from="1707809317797" duration="1576000" />
     </task>
     <servers />
   </component>

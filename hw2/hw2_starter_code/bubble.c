@@ -1,5 +1,5 @@
 #include "bubble.h"
-
+#include <string.h>
 
 /*
 	IMPORTANT: because this is a generic implementation, in bubble.c you must not use if-else to
@@ -18,15 +18,39 @@
 */
 
 
+
 void bubble_sort(void* base, size_t nel, size_t width, int (*compare)(void*,void*)) {
-	
-	/* Your code here */
-	
+
+    char* array = (char*)base; //type cast char into base
+    char* temp = malloc(width);
+    // allocate memory with size width and returns the pointer -temp- point to the first
+    //byte of of the allocated space
+    int swapped;
+
+    do {
+        swapped = 0;
+        for (size_t i = 0; i < nel - 1; i++) {
+            char* elem_i = array + i * width;
+            char* elem_i1 = array + (i + 1) * width;
+            if (compare(elem_i, elem_i1) > 0) {
+                memcpy(temp, elem_i, width);
+                memcpy(elem_i, elem_i1, width);
+                memcpy(elem_i1, temp, width);
+                swapped = 1;
+            }
+        }
+    } while (swapped);
+
+    free(temp);
 }
 
 
 void bubble_print(void* base, size_t nel, size_t width, void (*print)(void*)) {
-	
-	/* Your code here */
+
+	char* array = (char*) base;
+    for(size_t i = 0; i < nel; i++){
+        char* elem_i = array + (i * width);
+        print(elem_i);
+    }
 	
 }
