@@ -77,7 +77,7 @@ void* read_array(char* filename, char* format, size_t* len) {
         for (size_t i = 0; i < count; i++) {
             fscanf(file, format, &intArray[i]);
         }
-    } else if (strcmp(format, "%lf") == 0) {
+    } else if (strcmp(format, "%lf") == 0) { /*strcmp compares 2 strings if they are equal or not */
         double* doubleArray = (double*)array;
         for (size_t i = 0; i < count; i++) {
             fscanf(file, format, &doubleArray[i]);
