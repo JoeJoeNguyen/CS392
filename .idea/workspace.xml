@@ -11,8 +11,9 @@
   <component name="ChangeListManager">
     <list default="true" id="2d970ad8-3ce6-4f4e-b1d1-aa64934c7a1a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hw2/hw2_starter_code/a.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hw2/hw2_starter_code/bubblesort" beforeDir="false" afterPath="$PROJECT_DIR$/hw2/hw2_starter_code/bubblesort" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/hw2/hw2_starter_code/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/hw2/hw2_starter_code/main.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hw2/hw2_starter_code/utils.c" beforeDir="false" afterPath="$PROJECT_DIR$/hw2/hw2_starter_code/utils.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +67,7 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager">
+  <component name="RunManager" selected="C/C++ File.lab2_fn_pointers (1).c">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="CS392" />
       <method v="2">
@@ -117,6 +118,7 @@
       <workItem from="1707505305501" duration="3614000" />
       <workItem from="1707750770614" duration="6053000" />
       <workItem from="1707937800083" duration="1860000" />
+      <workItem from="1708013351367" duration="1194000" />
     </task>
     <servers />
   </component>

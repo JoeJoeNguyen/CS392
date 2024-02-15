@@ -17,7 +17,7 @@ int main(int argc, char **argv) {
 	
 
 	size_t len = 0;
-	if(strcmp(argv[2], "%lf") == 0){
+	if(strcmp(argv[2], "%lf") == 0){ //check the type of input we are sorting if it is "lf" - decimal or "%d" - integer
 	    double* arr = read_array(argv[1], argv[2], &len);
         bubble_sort(arr, len, sizeof(double), &cmpr_double);
         bubble_print(arr, len, sizeof(double), &print_double);
@@ -25,7 +25,7 @@ int main(int argc, char **argv) {
 	}else if(strcmp(argv[2], "%d") == 0){
         int* arr = read_array(argv[1], argv[2], &len);
         bubble_sort(arr, len, sizeof(int), &cmpr_int);
-        bubble_print(arr, len, sizeof(int), &cmpr_int);
+        bubble_print(arr, len, sizeof(int), &print_int);
         free(arr);
 	}
 
