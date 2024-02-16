@@ -10,10 +10,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2d970ad8-3ce6-4f4e-b1d1-aa64934c7a1a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/hw2/hw2_starter_code/makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hw2/hw2_starter_code/a.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hw2/hw2_starter_code/bubblesort" beforeDir="false" afterPath="$PROJECT_DIR$/hw2/hw2_starter_code/bubblesort" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hw2/hw2_starter_code/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/hw2/hw2_starter_code/main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hw2/hw2_starter_code/bubblesort" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,7 +27,9 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/hw1/test/junk.sh" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/hw2/hw2_starter_code/bubble.c" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/hw2/hw2_starter_code/main.c" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/hw2/hw2_starter_code/makefile" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/hw2/hw2_starter_code/utils.c" root0="SKIP_INSPECTION" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -92,6 +93,10 @@
         <option name="com.jetbrains.cidr.cpp.runfile.CppFileBuildBeforeRunTaskProvider$BasicBuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="C/C++ File.lab2_fn_pointers (1).c" />
+      <item itemvalue="C/C++ File.Unnamed" />
+    </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
