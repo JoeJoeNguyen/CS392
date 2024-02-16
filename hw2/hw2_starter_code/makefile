@@ -1,8 +1,9 @@
 #Author Son [Joe] Nguyen
 # I pledge my Honor that I have abided by the Stevens Honor System
-#the compiler
 
+#the GNU C Compiler
 $(CC) = gcc
+
 final: main.o bubble.o utils.o
 		$(CC) main.o bubble.o utils.o -o a.out
 main.o: main.c
