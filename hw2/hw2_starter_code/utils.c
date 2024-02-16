@@ -8,6 +8,11 @@
 	
 */
 
+/*
+ * Son Nguyen
+ * I pledge my honor that I have abided by the Stevens Honor System
+ * */
+
 int cmpr_int(void* a, void* b) {
 
     int num1 = *((int*) a); //cast type int to a and then dereference to num1

@@ -1,7 +1,10 @@
 #include "bubble.h"
 #include "utils.h"
 #include <string.h>
-
+/*
+ * Son Nguyen
+ * I pledge my honor that I have abided by the Stevens Honor System
+ * */
 int main(int argc, char **argv) {
 	
 	/* You can assume command-line arguments are always correct:
@@ -28,16 +31,6 @@ int main(int argc, char **argv) {
         bubble_print(arr, len, sizeof(int), &print_int);
         free(arr);
 	}
-
-	
-	//iSort(arr, len, sizeof(int), &cmpr_int);
-	//iPrint(arr, len, sizeof(int), &print_int);
-
-
-
-
-	
-	
 	exit(EXIT_SUCCESS);
 }
 
