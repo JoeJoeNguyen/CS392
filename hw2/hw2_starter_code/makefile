@@ -1,3 +1,5 @@
+
+#the compiler
 $(CC) = gcc
 
 final: main.o bubble.o utils.o
@@ -9,5 +11,7 @@ bubble.o: bubble.c bubble.h
 utils.o: utils.c utils.h
 		$(CC) -c utils.c
 
+
+#make clean to clean all the object files and exe then recompile it
 clean:
 	rm *.o a.out
