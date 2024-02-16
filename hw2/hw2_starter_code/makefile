@@ -5,15 +5,15 @@
 $(CC) = gcc
 
 final: main.o bubble.o utils.o
-		$(CC) main.o bubble.o utils.o -o a.out
+	$(CC) main.o bubble.o utils.o -o a.out
 main.o: main.c
-		$(CC) -c main.c
+	$(CC) -c main.c
 bubble.o: bubble.c bubble.h
-		$(CC) -c bubble.c
+	$(CC) -c bubble.c
 utils.o: utils.c utils.h
-		$(CC) -c utils.c
+	$(CC) -c utils.c
 
 
 #make clean to clean all the object files and exe then recompile it
 clean:
-	rm *.o a.out
+	rm -f *.o a.out
