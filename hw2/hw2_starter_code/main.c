@@ -29,7 +29,7 @@ int main(int argc, char **argv) {
         int* arr = read_array(argv[1], argv[2], &len);
         bubble_sort(arr, len, sizeof(int), &cmpr_int);
         bubble_print(arr, len, sizeof(int), &print_int);
-        free(arr);
+        free(arr); //free memory leak of read_array
 	}
 	exit(EXIT_SUCCESS);
 }
