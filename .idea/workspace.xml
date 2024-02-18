@@ -9,10 +9,8 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2d970ad8-3ce6-4f4e-b1d1-aa64934c7a1a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/hw2/hw2_starter_code/makefile" afterDir="false" />
+    <list default="true" id="2d970ad8-3ce6-4f4e-b1d1-aa64934c7a1a" name="Changes" comment="add comment to makefile">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hw2/hw2_starter_code/bubblesort" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +21,12 @@
     <option name="formatViaClangd" value="false" />
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
@@ -124,10 +128,64 @@
       <workItem from="1707750770614" duration="6053000" />
       <workItem from="1707937800083" duration="1860000" />
       <workItem from="1708013351367" duration="1194000" />
+      <workItem from="1708096027114" duration="5424000" />
     </task>
+    <task id="LOCAL-00001" summary="add comment to makefile">
+      <option name="closed" value="true" />
+      <created>1708096542812</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1708096542812</updated>
+    </task>
+    <task id="LOCAL-00002" summary="add comment to makefile">
+      <option name="closed" value="true" />
+      <created>1708096569107</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1708096569107</updated>
+    </task>
+    <task id="LOCAL-00003" summary="add comment to makefile">
+      <option name="closed" value="true" />
+      <created>1708097970445</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1708097970445</updated>
+    </task>
+    <task id="LOCAL-00004" summary="add comment to makefile">
+      <option name="closed" value="true" />
+      <created>1708098595329</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1708098595329</updated>
+    </task>
+    <task id="LOCAL-00005" summary="add comment to makefile">
+      <option name="closed" value="true" />
+      <created>1708112000261</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1708112000262</updated>
+    </task>
+    <task id="LOCAL-00006" summary="add comment to makefile">
+      <option name="closed" value="true" />
+      <created>1708112845198</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1708112845198</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add comment to makefile" />
+    <option name="LAST_COMMIT_MESSAGE" value="add comment to makefile" />
   </component>
 </project>
