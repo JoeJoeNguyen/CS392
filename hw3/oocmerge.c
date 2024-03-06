@@ -7,7 +7,15 @@
 #define TEMP_DIR "temp"
 
 void generate_numbers(int n, char* filename) {
-    int fd = open(filename, O_WRONLY | O_CREAT, S_IRUSR | S_IWUSR);
+    mkdir(TEMP_DIR, S_IRUSR | S_IWUSR | S_IXUSR);
+    char filepath[256];
+    sprintf(filepath, "%s/%s", TEMP_DIR, filename);
+    //take an integer n and a file to put randomly generated n numbers between -100 and 100 and put them to the file
+    int fd = open(filepath, O_WRONLY | O_CREAT, S_IRUSR | S_IWUSR);
+    //O_WRONLY: the file is open for writing only.
+    //O_CREAT: the file will be created if it does not already exist
+    //S_IRUSR | S_IWUSR: mode flags that set permissions of the file if it is created.
+    //S_IRUSR sets the read permissions for the user(owner), and S_IWUSR sets the write permission for the user.
     if (fd == -1) {
         perror("File failed to open");
         exit(1);
@@ -21,12 +29,13 @@ void generate_numbers(int n, char* filename) {
     close(fd);
 }
 
-void create_temp_dir() {
-    mkdir(TEMP_DIR, S_IRUSR | S_IWUSR | S_IXUSR);
-}
+
 
 void verify_and_print(char* filename) {
-    int fd = open(filename, O_RDONLY);
+    char filepath[256];
+    sprintf(filepath, "%s/%s", TEMP_DIR, filename);
+
+    int fd = open(filepath, O_RDONLY);
     if (fd == -1) {
         perror("File failed to open");
         exit(1);

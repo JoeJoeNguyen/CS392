@@ -10,5 +10,5 @@
 #include <sys/types.h>
 
 void generate_numbers(int, char*);
-void create_temp_dir();
+
 void verify_and_print(char*);
