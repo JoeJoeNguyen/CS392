@@ -7,7 +7,6 @@
 #define TEMP_DIR "temp"
 
 void generate_numbers(int n, char* filename) {
-    mkdir(TEMP_DIR, S_IRUSR | S_IWUSR | S_IXUSR);
     char filepath[256];
     sprintf(filepath, "%s/%s", TEMP_DIR, filename);
     //take an integer n and a file to put randomly generated n numbers between -100 and 100 and put them to the file
@@ -28,7 +27,6 @@ void generate_numbers(int n, char* filename) {
 
     close(fd);
 }
-
 
 
 void verify_and_print(char* filename) {
