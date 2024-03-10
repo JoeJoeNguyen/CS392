@@ -111,7 +111,7 @@ void sort_and_merge(char* filename) {
         perror("Failed to allocate memory");
         exit(EXIT_FAILURE);
     }
-
+    //in temp i created N numbers of file and each of them contain a number
     for (int i = 0; i < n; i++) {
         char temp_filepath[256];
         sprintf(temp_filepath, "%s/%d", TEMP_DIR, i);
