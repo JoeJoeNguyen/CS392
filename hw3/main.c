@@ -16,12 +16,21 @@
 #define TEMP_DIR "temp"
 
 void merge(char* filename1, char* filename2, char* output_filename) {
-    FILE* file1 = fopen(filename1, "rb");
-    FILE* file2 = fopen(filename2, "rb");
-    FILE* output_file = fopen(output_filename, "wb");
+    FILE *file1 = fopen(filename1, "rb");
+    if (file1 == NULL) {
+        perror("Error opening file1");
+        exit(EXIT_FAILURE);
+    }
 
-    if (file1 == NULL || file2 == NULL || output_file == NULL) {
-        perror("Error opening files");
+    FILE *file2 = fopen(filename2, "rb");
+    if (file2 == NULL) {
+        perror("Error opening file2");
+        exit(EXIT_FAILURE);
+    }
+
+    FILE *output_file = fopen(output_filename, "wb");
+    if (output_file == NULL) {
+        perror("Error opening output_file");
         exit(EXIT_FAILURE);
     }
 
@@ -40,64 +49,9 @@ void merge(char* filename1, char* filename2, char* output_filename) {
             read2 = fread(&num2, sizeof(float), 1, file2);
         }
     }
-void merge(char* filename1, char* filename2, char* output_filename) {
-    FILE* file1 = fopen(filename1, "rb");
-    FILE* file2 = fopen(filename2, "rb");
-    FILE* output_file = fopen(output_filename, "wb");
-
-    float num1, num2;
-    fread(&num1, sizeof(float), 1, file1);
-    fread(&num2, sizeof(float), 1, file2);
-
-    while (!feof(file1) && !feof(file2)) {
-        if (num1 <= num2) {
-            fwrite(&num1, sizeof(float), 1, output_file);
-            fread(&num1, sizeof(float), 1, file1);
-        } else {
-            fwrite(&num2, sizeof(float), 1, output_file);
-            fread(&num2, sizeof(float), 1, file2);
-        }
-    }
-
-    while (!feof(file1)) {
-        fwrite(&num1, sizeof(float), 1, output_file);
-        fread(&num1, sizeof(float), 1, file1);
-    }
-
-    while (!feof(file2)) {
-        fwrite(&num2, sizeof(float), 1, output_file);
-        fread(&num2, sizeof(float), 1, file2);
-    }
-
-    fclose(file1);
-    fclose(file2);
-    fclose(output_file);
-
-    remove(filename1);
-    remove(filename2);
-}
-
-    // Copy the remaining elements from file1
-    while (read1 > 0) {
-        fwrite(&num1, sizeof(float), 1, output_file);
-        read1 = fread(&num1, sizeof(float), 1, file1);
-    }
-
-    // Copy the remaining elements from file2
-    while (read2 > 0) {
-        fwrite(&num2, sizeof(float), 1, output_file);
-        read2 = fread(&num2, sizeof(float), 1, file2);
-    }
-
-    fclose(file1);
-    fclose(file2);
-    fclose(output_file);
-    remove(filename1);
-    remove(filename2);
 }
 
 void sort_and_merge(char* filename) {
-    // Removed the TEMP_DIR from the filepath
     char filepath[256];
     sprintf(filepath, "%s", filename);
 
