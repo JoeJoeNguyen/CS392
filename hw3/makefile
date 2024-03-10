@@ -16,3 +16,4 @@ oocmerge.o: oocmerge.c oocmerge.h
 clean:
 	rm -f *.o a.out
 	rm -rf temp
+	rm -f output

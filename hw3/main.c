@@ -2,93 +2,140 @@
 // Created by Joe Nguyen on 3/1/24.
 //
 // Usage: oocmerge <N> <output filename>
-
-#include <string.h>
 #include "oocmerge.h"
+#include <string.h>
+#include <stdlib.h>
+#include <stdio.h>
+#include <sys/types.h>
+#include <sys/stat.h>
+#include <fcntl.h>
+#include <unistd.h>
+#include <dirent.h>
+#include <limits.h>
+
 #define TEMP_DIR "temp"
-void merge(float* arr, int l, int m, int r) {
-    int i, j, k;
-    int n1 = m - l + 1;
-    int n2 = r - m;
 
-    float* L = (float*) malloc(n1 * sizeof(float));
-    float* R = (float*) malloc(n2 * sizeof(float));
+void merge(char* filename1, char* filename2, char* output_filename) {
+    FILE* file1 = fopen(filename1, "rb");
+    FILE* file2 = fopen(filename2, "rb");
+    FILE* output_file = fopen(output_filename, "wb");
 
-    for (i = 0; i < n1; i++)
-        L[i] = arr[l + i];
-    for (j = 0; j < n2; j++)
-        R[j] = arr[m + 1 + j];
+    if (file1 == NULL || file2 == NULL || output_file == NULL) {
+        perror("Error opening files");
+        exit(EXIT_FAILURE);
+    }
 
-    i = 0;
-    j = 0;
-    k = l;
-    while (i < n1 && j < n2) {
-        if (L[i] <= R[j]) {
-            arr[k] = L[i];
-            i++;
+    float num1, num2;
+    size_t read1, read2;
+
+    read1 = fread(&num1, sizeof(float), 1, file1);
+    read2 = fread(&num2, sizeof(float), 1, file2);
+
+    while (read1 > 0 && read2 > 0) {
+        if (num1 <= num2) {
+            fwrite(&num1, sizeof(float), 1, output_file);
+            read1 = fread(&num1, sizeof(float), 1, file1);
         } else {
-            arr[k] = R[j];
-            j++;
+            fwrite(&num2, sizeof(float), 1, output_file);
+            read2 = fread(&num2, sizeof(float), 1, file2);
         }
-        k++;
+    }
+void merge(char* filename1, char* filename2, char* output_filename) {
+    FILE* file1 = fopen(filename1, "rb");
+    FILE* file2 = fopen(filename2, "rb");
+    FILE* output_file = fopen(output_filename, "wb");
+
+    float num1, num2;
+    fread(&num1, sizeof(float), 1, file1);
+    fread(&num2, sizeof(float), 1, file2);
+
+    while (!feof(file1) && !feof(file2)) {
+        if (num1 <= num2) {
+            fwrite(&num1, sizeof(float), 1, output_file);
+            fread(&num1, sizeof(float), 1, file1);
+        } else {
+            fwrite(&num2, sizeof(float), 1, output_file);
+            fread(&num2, sizeof(float), 1, file2);
+        }
     }
 
-    while (i < n1) {
-        arr[k] = L[i];
-        i++;
-        k++;
+    while (!feof(file1)) {
+        fwrite(&num1, sizeof(float), 1, output_file);
+        fread(&num1, sizeof(float), 1, file1);
     }
 
-    while (j < n2) {
-        arr[k] = R[j];
-        j++;
-        k++;
+    while (!feof(file2)) {
+        fwrite(&num2, sizeof(float), 1, output_file);
+        fread(&num2, sizeof(float), 1, file2);
     }
 
-    free(L);
-    free(R);
+    fclose(file1);
+    fclose(file2);
+    fclose(output_file);
+
+    remove(filename1);
+    remove(filename2);
 }
 
-void mergeSort(float* arr, int l, int r) {
-    if (l < r) {
-        int m = l + (r - l) / 2;
-
-        mergeSort(arr, l, m);
-        mergeSort(arr, m + 1, r);
-
-        merge(arr, l, m, r);
+    // Copy the remaining elements from file1
+    while (read1 > 0) {
+        fwrite(&num1, sizeof(float), 1, output_file);
+        read1 = fread(&num1, sizeof(float), 1, file1);
     }
+
+    // Copy the remaining elements from file2
+    while (read2 > 0) {
+        fwrite(&num2, sizeof(float), 1, output_file);
+        read2 = fread(&num2, sizeof(float), 1, file2);
+    }
+
+    fclose(file1);
+    fclose(file2);
+    fclose(output_file);
+    remove(filename1);
+    remove(filename2);
 }
 
 void sort_and_merge(char* filename) {
+    // Removed the TEMP_DIR from the filepath
     char filepath[256];
-    sprintf(filepath, "%s/%s", TEMP_DIR, filename);
+    sprintf(filepath, "%s", filename);
 
-    int fd = open(filepath, O_RDWR);
-    if (fd == -1) {
-        perror("Failed to open file for reading and writing");
-        exit(EXIT_FAILURE);
+    FILE* file = fopen(filepath, "rb");
+    if (file == NULL) {
+        perror("Failed to open file");
+        return;
     }
 
-    struct stat st;
-    fstat(fd, &st);
-    int n = st.st_size / sizeof(float);
+    int file_count = 0;
+    float num;
+    while (fread(&num, sizeof(float), 1, file) == 1) {
+        char temp_filepath[256];
+        sprintf(temp_filepath, "%s/%d", TEMP_DIR, file_count);
 
-    float* arr = (float*) malloc(n * sizeof(float));
-    if (arr == NULL) {
-        perror("Failed to allocate memory");
-        exit(EXIT_FAILURE);
+        FILE* temp_file = fopen(temp_filepath, "wb");
+        fwrite(&num, sizeof(float), 1, temp_file);
+        fclose(temp_file);
+
+        file_count++;
     }
 
-    read(fd, arr, n * sizeof(float));
-    lseek(fd, 0, SEEK_SET);
+    fclose(file);
 
-    mergeSort(arr, 0, n - 1);
+    while (file_count > 1) {
+        char filepath1[256], filepath2[256], output_filepath[256];
+        sprintf(filepath1, "%s/%d", TEMP_DIR, file_count - 2);
+        sprintf(filepath2, "%s/%d", TEMP_DIR, file_count - 1);
+        sprintf(output_filepath, "%s/%d", TEMP_DIR, file_count - 2);
 
-    write(fd, arr, n * sizeof(float));
+        merge(filepath1, filepath2, output_filepath);
 
-    free(arr);
-    close(fd);
+        file_count--;
+    }
+
+    char final_filepath[256];
+    sprintf(final_filepath, "%s/%d", TEMP_DIR, 0);
+    rename(final_filepath, filepath);
 }
 
 int main(int argc, char **argv) {
@@ -107,9 +154,9 @@ int main(int argc, char **argv) {
     verify_and_print(filename);
 
     // Delete the temp directory and its contents.
-    char command[256];
-    sprintf(command, "rm -rf %s", TEMP_DIR);
-    system(command);
+    //char command[256];
+    //sprintf(command, "rm -rf %s", TEMP_DIR);
+    //system(command);
 
     return 0;
 }

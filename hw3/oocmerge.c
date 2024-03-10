@@ -8,7 +8,7 @@
 
 void generate_numbers(int n, char* filename) {
     char filepath[256];
-    sprintf(filepath, "%s/%s", TEMP_DIR, filename);
+    sprintf(filepath, "%s", filename);
     //take an integer n and a file to put randomly generated n numbers between -100 and 100 and put them to the file
     int fd = open(filepath, O_WRONLY | O_CREAT, S_IRUSR | S_IWUSR);
     //O_WRONLY: the file is open for writing only.
@@ -31,7 +31,7 @@ void generate_numbers(int n, char* filename) {
 
 void verify_and_print(char* filename) {
     char filepath[256];
-    sprintf(filepath, "%s/%s", TEMP_DIR, filename);
+    sprintf(filepath, "%s", filename);
 
     int fd = open(filepath, O_RDONLY);
     if (fd == -1) {
