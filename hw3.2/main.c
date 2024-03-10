@@ -11,15 +11,11 @@
 #define TEMP_DIR "temp"
 
 void generate_numbers(int n, char* filename) {
-    char filepath[256];
-    sprintf(filepath, "%s/%s", TEMP_DIR, filename);
-
-    int fd = open(filepath, O_WRONLY | O_CREAT, S_IRUSR | S_IWUSR);
+    int fd = open(filename, O_WRONLY | O_CREAT, S_IRUSR | S_IWUSR);
     if (fd == -1) {
         perror("Failed to open file for writing");
         exit(EXIT_FAILURE);
     }
-
 
     for (int i = 0; i < n; i++) {
         float num = ((float)rand() / (float)RAND_MAX) * 200.0 - 100.0;
@@ -83,13 +79,11 @@ void mergeSort(float* arr, int l, int r) {
     }
 }
 
-void sort_and_merge(char* filename) {
-    char filepath[256];
-    sprintf(filepath, "%s/%s", TEMP_DIR, filename);
 
-    int fd = open(filepath, O_RDWR);
+void sort_and_merge(char* filename) {
+    int fd = open(filename, O_RDONLY);
     if (fd == -1) {
-        perror("Failed to open file for reading and writing");
+        perror("Failed to open file for reading");
         exit(EXIT_FAILURE);
     }
 
@@ -97,29 +91,68 @@ void sort_and_merge(char* filename) {
     fstat(fd, &st);
     int n = st.st_size / sizeof(float);
 
+    int* fds = (int*) malloc(n * sizeof(int));
+    if (fds == NULL) {
+        perror("Failed to allocate memory");
+        exit(EXIT_FAILURE);
+    }
+
+    float num;
+    for (int i = 0; i < n; i++) {
+        read(fd, &num, sizeof(float));
+
+        char temp_filepath[256];
+        sprintf(temp_filepath, "%s/%d", TEMP_DIR, i);
+
+        fds[i] = open(temp_filepath, O_WRONLY | O_CREAT, S_IRUSR | S_IWUSR);
+        if (fds[i] == -1) {
+            perror("Failed to open file for writing");
+            exit(EXIT_FAILURE);
+        }
+
+        write(fds[i], &num, sizeof(float));
+        close(fds[i]);
+    }
+
+    close(fd);
+
     float* arr = (float*) malloc(n * sizeof(float));
     if (arr == NULL) {
         perror("Failed to allocate memory");
         exit(EXIT_FAILURE);
     }
 
-    read(fd, arr, n * sizeof(float));
-    lseek(fd, 0, SEEK_SET);
+    for (int i = 0; i < n; i++) {
+        char temp_filepath[256];
+        sprintf(temp_filepath, "%s/%d", TEMP_DIR, i);
+
+        fds[i] = open(temp_filepath, O_RDONLY);
+        if (fds[i] == -1) {
+            perror("Failed to open file for reading");
+            exit(EXIT_FAILURE);
+        }
+
+        read(fds[i], &arr[i], sizeof(float));
+        close(fds[i]);
+    }
 
     mergeSort(arr, 0, n - 1);
+
+    fd = open(filename, O_WRONLY);
+    if (fd == -1) {
+        perror("Failed to open file for writing");
+        exit(EXIT_FAILURE);
+    }
 
     write(fd, arr, n * sizeof(float));
 
     free(arr);
+    free(fds);
     close(fd);
 }
 
-
 void verify_and_print(char* filename) {
-    char filepath[256];
-    sprintf(filepath, "%s/%s", TEMP_DIR, filename);
-
-    int fd = open(filepath, O_RDONLY);
+    int fd = open(filename, O_RDONLY);
     if (fd == -1) {
         perror("File failed to open");
         exit(1);
@@ -158,9 +191,9 @@ int main(int argc, char **argv) {
     verify_and_print(filename);
 
     // Delete the temp directory and its contents.
-    char command[256];
-    sprintf(command, "rm -rf %s", TEMP_DIR);
-    system(command);
+    //char command[256];
+    //sprintf(command, "rm -rf %s", TEMP_DIR);
+    //system(command);
 
     return 0;
 }

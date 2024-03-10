@@ -13,3 +13,5 @@ main.o: main.c
 
 clean:
 	rm -f *.o a.out
+	rm -rf temp
+	rm -f output
