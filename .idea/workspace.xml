@@ -9,7 +9,10 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2d970ad8-3ce6-4f4e-b1d1-aa64934c7a1a" name="Changes" comment="basics files for hw3" />
+    <list default="true" id="2d970ad8-3ce6-4f4e-b1d1-aa64934c7a1a" name="Changes" comment="first class after spring break">
+      <change afterPath="$PROJECT_DIR$/hw4/maxfile.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -33,6 +36,7 @@
     <setting file="file://$PROJECT_DIR$/hw2/hw2_starter_code/main.c" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/hw2/hw2_starter_code/makefile" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/hw2/hw2_starter_code/utils.c" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/hw4/maxfile.c" root0="SKIP_INSPECTION" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -104,6 +108,9 @@
       <workItem from="1707937800083" duration="1860000" />
       <workItem from="1708013351367" duration="1194000" />
       <workItem from="1708096027114" duration="5424000" />
+      <workItem from="1710142822375" duration="613000" />
+      <workItem from="1710785153888" duration="5416000" />
+      <workItem from="1710918673387" duration="1022000" />
     </task>
     <task id="LOCAL-00001" summary="add comment to makefile">
       <option name="closed" value="true" />
@@ -153,7 +160,15 @@
       <option name="project" value="LOCAL" />
       <updated>1708112845198</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="first class after spring break">
+      <option name="closed" value="true" />
+      <created>1710866487652</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1710866487652</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -161,6 +176,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add comment to makefile" />
-    <option name="LAST_COMMIT_MESSAGE" value="add comment to makefile" />
+    <MESSAGE value="first class after spring break" />
+    <option name="LAST_COMMIT_MESSAGE" value="first class after spring break" />
   </component>
 </project>
