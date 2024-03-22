@@ -13,4 +13,3 @@ maxfile.o: maxfile.c
 
 clean:
 	rm -f *.o maxfile
-	rm -rf temp
