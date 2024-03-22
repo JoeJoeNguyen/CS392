@@ -41,7 +41,7 @@ int main(int argc, char** argv ){
     char LargestFile[PATH_MAX] = "";
     int size = 0;
     while((entry = readdir(direc)) != NULL){
-        snprintf((char *) path, PATH_MAX, "%s/%s", argv[0], entry -> d_name);
+        snprintf((char *) path, PATH_MAX, "%s/%s", argv[1], entry -> d_name);
         super((char *) path, LargestFile, &size);
     }
     printf("The largest file is %s with size %d bytes\n", LargestFile, size);
