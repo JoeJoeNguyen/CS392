@@ -21,9 +21,13 @@ void super(char *fpath, char* LargestFile, int *size){
         return;
     }
     if(S_ISREG(fileStat.st_mode)){
+        //check if the file is a regular file
         if(fileStat.st_size> *size){
+            //if it is a regular file, if the file size is larger
             *size = fileStat.st_size;
+            //update it size
             strcpy(LargestFile, fpath);
+            //also coppy the current path to the largestFile path
         }
     }
 }
@@ -41,6 +45,7 @@ int main(int argc, char** argv ){
     }
 
     struct dirent *entry;
+    DIR* subdirec;
     char *path[PATH_MAX];
     char LargestFile[PATH_MAX] = "";
     int size = 0;
