@@ -13,7 +13,11 @@
 
 void super(char *fpath, char* LargestFile, int *size){
     struct stat fileStat;
+    // the structure is used to store the information about the file.
+
     if(stat(fpath, &fileStat)<0){
+        //the stat() function retrieves information about the file at fpath and stores it in the fileStat
+        //if stat return a negative value, it means an error occurred, so the function return.
         return;
     }
     if(S_ISREG(fileStat.st_mode)){
