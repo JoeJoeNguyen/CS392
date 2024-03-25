@@ -1,14 +1,11 @@
 //
 // Created by Joe Nguyen on 3/20/24.
-//
+// I pledge my honor that I have abided by the Stevens Honor System.
 
-#include <unistd.h>
 #include <string.h>
-#include <stdlib.h>
 #include <stdio.h>
 #include <sys/stat.h>
 #include <fcntl.h>
-#include <unistd.h>
 #include <dirent.h>
 #include <sys/param.h>
 #include <libgen.h>
