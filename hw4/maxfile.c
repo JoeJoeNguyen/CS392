@@ -47,7 +47,15 @@ void super(char *fpath, char* LargestFile, int *size){
 
 }
 
-
+void super2 (char *path, int *totalsize){
+    struct stat fileStat;
+    if(stat(path, &fileStat)<0){
+        return;
+    }
+    if(S_ISREG(fileStat.st_mode)) {
+        *totalsize += fileStat.st_size;
+    }
+}
 
 int main(int argc, char** argv ){
     if(argc != 2){
@@ -64,11 +72,14 @@ int main(int argc, char** argv ){
     char *path[PATH_MAX];
     char LargestFile[PATH_MAX] = "";
     int size = 0;
+    int totalsize = 0;
     while((entry = readdir(direc)) != NULL){
         snprintf((char *) path, PATH_MAX, "%s/%s", argv[1], entry -> d_name);
         super((char *) path, LargestFile, &size);
+        super2((char *) path, &totalsize);
     }
     printf("The largest file is %s with size %d bytes\n", basename(LargestFile), size);
+    printf("The total size of all regular files in the directory is %d bytes\n", totalsize);
     closedir(direc);
     return 0;
 

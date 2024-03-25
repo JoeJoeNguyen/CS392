@@ -17,8 +17,7 @@
   <component name="ChangeListManager">
     <list default="true" id="2d970ad8-3ce6-4f4e-b1d1-aa64934c7a1a" name="Changes" comment="hw4 continue">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hw4/maxfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hw4/maxfile.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hw4/maxfile.c" beforeDir="false" afterPath="$PROJECT_DIR$/hw4/maxfile.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +27,7 @@
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="Git.Settings">
     <option name="PUSH_TAGS">
       <GitPushTagMode>
@@ -105,6 +105,11 @@
         <option name="com.jetbrains.cidr.cpp.runfile.CppFileBuildBeforeRunTaskProvider$BasicBuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="C/C++ File.Unnamed" />
+      <item itemvalue="C/C++ File.maxfile.c" />
+      <item itemvalue="CMake Application.CS392" />
+    </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
