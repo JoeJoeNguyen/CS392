@@ -10,11 +10,13 @@
 #include <fcntl.h>
 #include <unistd.h>
 #include <dirent.h>
+#include <sys/param.h>
+#include <libgen.h>
 
 void super(char *fpath, char* LargestFile, int *size){
     struct stat fileStat;
     // the structure is used to store the information about the file.
-
+    char newpath[PATH_MAX];
     if(stat(fpath, &fileStat)<0){
         //the stat() function retrieves information about the file at fpath and stores it in the fileStat
         //if stat return a negative value, it means an error occurred, so the function return.
@@ -29,7 +31,23 @@ void super(char *fpath, char* LargestFile, int *size){
             strcpy(LargestFile, fpath);
             //also coppy the current path to the largestFile path
         }
+    }else if(S_ISDIR(fileStat.st_mode)){
+        DIR* subdirec = opendir(fpath);
+        //if the file is a directory, open the directory
+        if(subdirec == NULL){
+            //if the directory cannot be opened, return
+            return;
+        }
+        struct dirent *entry;
+        while((entry = readdir(subdirec)) != NULL){
+            snprintf(newpath, PATH_MAX, "%s/%s", fpath, entry -> d_name);
+            //create a new path for the subdirectory
+            super(newpath, LargestFile, size);
+            //recursively call the function to check the subdirectory
+        }
+
     }
+
 }
 
 
@@ -53,7 +71,7 @@ int main(int argc, char** argv ){
         snprintf((char *) path, PATH_MAX, "%s/%s", argv[1], entry -> d_name);
         super((char *) path, LargestFile, &size);
     }
-    printf("The largest file is %s with size %d bytes\n", LargestFile, size);
+    printf("The largest file is %s with size %d bytes\n", basename(LargestFile), size);
     closedir(direc);
     return 0;
 
