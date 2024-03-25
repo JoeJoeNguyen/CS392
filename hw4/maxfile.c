@@ -28,15 +28,19 @@ void super(char *fpath, char* LargestFile, int *size){
             strcpy(LargestFile, fpath);
             //also coppy the current path to the largestFile path
         }
-    }else if(S_ISDIR(fileStat.st_mode)){
+    }
+    if(S_ISDIR(fileStat.st_mode)){
         DIR* subdirec = opendir(fpath);
         //if the file is a directory, open the directory
         if(subdirec == NULL){
-            //if the directory cannot be opened, return
+            fprintf( stderr, "Cannot open the sub directory %s", fpath);
             return;
         }
         struct dirent *entry;
         while((entry = readdir(subdirec)) != NULL){
+            if (strcmp(entry->d_name, ".") == 0 || strcmp(entry->d_name, "..") == 0) {
+                continue;
+            }
             snprintf(newpath, PATH_MAX, "%s/%s", fpath, entry -> d_name);
             //create a new path for the subdirectory
             super(newpath, LargestFile, size);
@@ -60,11 +64,13 @@ void super2 (char *path, int *totalsize){
 int main(int argc, char** argv ){
     if(argc != 2){
         fprintf(stderr, "Usage: %s <directory>\n", argv[0]);
+        return 1;
     }
     DIR* direc = opendir(argv[1]);
 
     if(direc == NULL){
         fprintf( stderr, "Cannot open the directory %s", argv[1]);
+        return 1;
     }
 
     struct dirent *entry;

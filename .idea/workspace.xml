@@ -16,7 +16,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2d970ad8-3ce6-4f4e-b1d1-aa64934c7a1a" name="Changes" comment="hw4 continue">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/hw4/maxfile.c" beforeDir="false" afterPath="$PROJECT_DIR$/hw4/maxfile.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
