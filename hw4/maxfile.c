@@ -33,18 +33,19 @@ void super(char *fpath, char* LargestFile, int *size){
         DIR* subdirec = opendir(fpath);
         //if the file is a directory, open the directory
         if(subdirec == NULL){
-            fprintf( stderr, "Cannot open the sub directory %s", fpath);
+            fprintf( stderr, "Cannot open the sub directory %s\n", fpath);
             return;
         }
         struct dirent *entry;
         while((entry = readdir(subdirec)) != NULL){
             if (strcmp(entry->d_name, ".") == 0 || strcmp(entry->d_name, "..") == 0) {
                 continue;
+            }else {
+                snprintf(newpath, PATH_MAX, "%s/%s", fpath, entry->d_name);
+                //create a new path for the subdirectory
+                super(newpath, LargestFile, size);
+                //recursively call the function to check the subdirectory
             }
-            snprintf(newpath, PATH_MAX, "%s/%s", fpath, entry -> d_name);
-            //create a new path for the subdirectory
-            super(newpath, LargestFile, size);
-            //recursively call the function to check the subdirectory
         }
 
     }
@@ -69,20 +70,19 @@ int main(int argc, char** argv ){
     DIR* direc = opendir(argv[1]);
 
     if(direc == NULL){
-        fprintf( stderr, "Cannot open the directory %s", argv[1]);
+        fprintf( stderr, "Cannot open the directory %s\n", argv[1]);
         return 1;
     }
 
     struct dirent *entry;
-    DIR* subdirec;
     char *path[PATH_MAX];
     char LargestFile[PATH_MAX] = "";
     int size = 0;
     int totalsize = 0;
     while((entry = readdir(direc)) != NULL){
         snprintf((char *) path, PATH_MAX, "%s/%s", argv[1], entry -> d_name);
-        super((char *) path, LargestFile, &size);
-        super2((char *) path, &totalsize);
+        super((char *) path, LargestFile, &size); //this is to find the largest file
+        super2((char *) path, &totalsize); //this is to find the total disk usage
     }
     printf("The largest file is %s with size %d bytes\n", basename(LargestFile), size);
     printf("The total size of all regular files in the directory is %d bytes\n", totalsize);
