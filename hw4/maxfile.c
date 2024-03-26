@@ -126,7 +126,4 @@ int main(int argc, char** argv ){
     printf("The total size of all regular files in the directory is %d bytes\n", totalsize);
     closedir(direc);
     return 0;
-
-
-
 }
