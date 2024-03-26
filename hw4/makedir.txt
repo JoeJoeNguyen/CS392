@@ -1,0 +1,23 @@
+#!/bin/bash
+
+# Create top-level directory
+mkdir -p my_directory
+
+# Create two subdirectories
+mkdir -p my_directory/subdirectory1
+mkdir -p my_directory/subdirectory2
+
+# Create four files in each subdirectory
+touch my_directory/subdirectory1/man git > git.txt
+touch my_directory/subdirectory1/man chown > chown.txt
+touch my_directory/subdirectory1/man ls > ls.txt
+touch my_directory/subdirectory1/man sudo > sudo.txt
+
+touch my_directory/subdirectory2/man clear > clear.txt
+touch my_directory/subdirectory2/file2
+touch my_directory/subdirectory2/file3
+touch my_directory/subdirectory2/file4
+
+# Create two files in the top-level directory
+touch my_directory/file1
+touch my_directory/file2
