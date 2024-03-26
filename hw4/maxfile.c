@@ -9,6 +9,17 @@
 #include <dirent.h>
 #include <sys/param.h>
 #include <libgen.h>
+#include <unistd.h>
+
+int is_writable(char *filename) {
+    if (access(filename, W_OK) != -1) {
+        // The file is writable
+        return 1;
+    } else {
+        // The file is not writable or do   es not exist
+        return 0;
+    }
+}
 
 void super(char *fpath, char* LargestFile, int *size){
     struct stat fileStat;
@@ -60,7 +71,12 @@ void super2 (char *path, int *totalsize){
     }
     if(S_ISREG(fileStat.st_mode)) {
         *totalsize += fileStat.st_size;
-        printf("the file %s has %ld bytes\n", basename(path), fileStat.st_size);
+        if(is_writable(path) == 1){
+            printf("the file %s has %ld bytes - writable\n", basename(path), fileStat.st_size);
+        }else{
+            printf("the file %s has %ld bytes - non-writable\n", basename(path), fileStat.st_size);
+        }
+
     }
     if(S_ISDIR(fileStat.st_mode)){
         DIR* subdirec = opendir(path);
