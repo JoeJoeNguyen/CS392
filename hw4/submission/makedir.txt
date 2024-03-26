@@ -1,0 +1,28 @@
+#!/bin/bash
+
+
+# how to use:
+#  - bash makedir.txt -
+
+
+# Create top-level directory
+mkdir -p my_directory
+
+# Create two subdirectories
+mkdir -p my_directory/subdirectory1
+mkdir -p my_directory/subdirectory2
+
+# Create four files in each subdirectory with the content of the man page
+man git > my_directory/subdirectory1/git.txt
+man chown > my_directory/subdirectory1/chown.txt
+man ls > my_directory/subdirectory1/ls.txt
+man sudo > my_directory/subdirectory1/sudo.txt
+
+man clear > my_directory/subdirectory2/clear.txt
+man chmod > my_directory/subdirectory2/chmod.txt
+man mv > my_directory/subdirectory2/mv.txt
+man mkdir > my_directory/subdirectory2/mkdir.txt
+
+# Create two files in the top-level directory with the content of the man page
+man cat > my_directory/cat.txt
+man touch > my_directory/touch.txt
