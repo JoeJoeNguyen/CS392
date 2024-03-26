@@ -38,7 +38,7 @@ void super(char *fpath, char* LargestFile, int *size){
         }
         struct dirent *entry;
         while((entry = readdir(subdirec)) != NULL){
-            if (strcmp(entry->d_name, ".") == 0 || strcmp(entry->d_name, "..") == 0) {
+            if (strcmp(basename(fpath), ".") == 0 || strcmp(basename(fpath), "..") == 0) {
                 continue;
             }else {
                 snprintf(newpath, PATH_MAX, "%s/%s", fpath, entry->d_name);
@@ -54,11 +54,33 @@ void super(char *fpath, char* LargestFile, int *size){
 
 void super2 (char *path, int *totalsize){
     struct stat fileStat;
+    char newpath[PATH_MAX];
     if(stat(path, &fileStat)<0){
         return;
     }
     if(S_ISREG(fileStat.st_mode)) {
         *totalsize += fileStat.st_size;
+        printf("the file %s has %ld bytes\n", basename(path), fileStat.st_size);
+    }
+    if(S_ISDIR(fileStat.st_mode)){
+        DIR* subdirec = opendir(path);
+        //if the file is a directory, open the directory
+        if(subdirec == NULL){
+            fprintf( stderr, "Cannot open the sub directory %s\n", path);
+            return;
+        }
+        struct dirent *entry;
+        while((entry = readdir(subdirec)) != NULL){
+            if (strcmp(basename(path), ".") == 0 || strcmp(basename(path), "..") == 0) {
+                continue;
+            }else {
+                snprintf(newpath, PATH_MAX, "%s/%s", path, entry->d_name);
+                //create a new path for the subdirectory
+                super2(newpath, totalsize);
+                //recursively call the function to check the subdirectory
+            }
+        }
+
     }
 }
 
