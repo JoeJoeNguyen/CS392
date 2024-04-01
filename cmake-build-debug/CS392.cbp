@@ -156,6 +156,12 @@
 		<Unit filename="/Users/joenguyen/CS392/labs/lab5/lab5_fork.c">
 			<Option target="CS392"/>
 		</Unit>
+		<Unit filename="/Users/joenguyen/CS392/labs/lab6/lab6_nforks.c">
+			<Option target="CS392"/>
+		</Unit>
+		<Unit filename="/Users/joenguyen/CS392/labs/lab6/randomleep2.c">
+			<Option target="CS392"/>
+		</Unit>
 		<Unit filename="/Users/joenguyen/CS392/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

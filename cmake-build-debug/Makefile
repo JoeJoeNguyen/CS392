@@ -561,6 +561,54 @@ labs/lab5/lab5_fork.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CS392.dir/build.make CMakeFiles/CS392.dir/labs/lab5/lab5_fork.c.s
 .PHONY : labs/lab5/lab5_fork.c.s
 
+labs/lab6/lab6_nforks.o: labs/lab6/lab6_nforks.c.o
+.PHONY : labs/lab6/lab6_nforks.o
+
+# target to build an object file
+labs/lab6/lab6_nforks.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CS392.dir/build.make CMakeFiles/CS392.dir/labs/lab6/lab6_nforks.c.o
+.PHONY : labs/lab6/lab6_nforks.c.o
+
+labs/lab6/lab6_nforks.i: labs/lab6/lab6_nforks.c.i
+.PHONY : labs/lab6/lab6_nforks.i
+
+# target to preprocess a source file
+labs/lab6/lab6_nforks.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CS392.dir/build.make CMakeFiles/CS392.dir/labs/lab6/lab6_nforks.c.i
+.PHONY : labs/lab6/lab6_nforks.c.i
+
+labs/lab6/lab6_nforks.s: labs/lab6/lab6_nforks.c.s
+.PHONY : labs/lab6/lab6_nforks.s
+
+# target to generate assembly for a file
+labs/lab6/lab6_nforks.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CS392.dir/build.make CMakeFiles/CS392.dir/labs/lab6/lab6_nforks.c.s
+.PHONY : labs/lab6/lab6_nforks.c.s
+
+labs/lab6/randomleep2.o: labs/lab6/randomleep2.c.o
+.PHONY : labs/lab6/randomleep2.o
+
+# target to build an object file
+labs/lab6/randomleep2.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CS392.dir/build.make CMakeFiles/CS392.dir/labs/lab6/randomleep2.c.o
+.PHONY : labs/lab6/randomleep2.c.o
+
+labs/lab6/randomleep2.i: labs/lab6/randomleep2.c.i
+.PHONY : labs/lab6/randomleep2.i
+
+# target to preprocess a source file
+labs/lab6/randomleep2.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CS392.dir/build.make CMakeFiles/CS392.dir/labs/lab6/randomleep2.c.i
+.PHONY : labs/lab6/randomleep2.c.i
+
+labs/lab6/randomleep2.s: labs/lab6/randomleep2.c.s
+.PHONY : labs/lab6/randomleep2.s
+
+# target to generate assembly for a file
+labs/lab6/randomleep2.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CS392.dir/build.make CMakeFiles/CS392.dir/labs/lab6/randomleep2.c.s
+.PHONY : labs/lab6/randomleep2.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -624,6 +672,12 @@ help:
 	@echo "... labs/lab5/lab5_fork.o"
 	@echo "... labs/lab5/lab5_fork.i"
 	@echo "... labs/lab5/lab5_fork.s"
+	@echo "... labs/lab6/lab6_nforks.o"
+	@echo "... labs/lab6/lab6_nforks.i"
+	@echo "... labs/lab6/lab6_nforks.s"
+	@echo "... labs/lab6/randomleep2.o"
+	@echo "... labs/lab6/randomleep2.i"
+	@echo "... labs/lab6/randomleep2.s"
 .PHONY : help
 
 

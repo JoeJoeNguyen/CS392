@@ -32,4 +32,6 @@ add_executable(CS392
         labs/lab5/lab5_fork.c
         "labs/lab2_fn_pointers (1).c"
         labs/lab2_fn_pointers.c
-        labs/lab3_files.c)
+        labs/lab3_files.c
+        labs/lab6/lab6_nforks.c
+        labs/lab6/randomleep2.c)

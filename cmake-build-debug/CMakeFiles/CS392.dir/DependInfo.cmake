@@ -26,6 +26,8 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/joenguyen/CS392/labs/lab3_files.c" "CMakeFiles/CS392.dir/labs/lab3_files.c.o" "gcc" "CMakeFiles/CS392.dir/labs/lab3_files.c.o.d"
   "/Users/joenguyen/CS392/labs/lab5/fork_intro.c" "CMakeFiles/CS392.dir/labs/lab5/fork_intro.c.o" "gcc" "CMakeFiles/CS392.dir/labs/lab5/fork_intro.c.o.d"
   "/Users/joenguyen/CS392/labs/lab5/lab5_fork.c" "CMakeFiles/CS392.dir/labs/lab5/lab5_fork.c.o" "gcc" "CMakeFiles/CS392.dir/labs/lab5/lab5_fork.c.o.d"
+  "/Users/joenguyen/CS392/labs/lab6/lab6_nforks.c" "CMakeFiles/CS392.dir/labs/lab6/lab6_nforks.c.o" "gcc" "CMakeFiles/CS392.dir/labs/lab6/lab6_nforks.c.o.d"
+  "/Users/joenguyen/CS392/labs/lab6/randomleep2.c" "CMakeFiles/CS392.dir/labs/lab6/randomleep2.c.o" "gcc" "CMakeFiles/CS392.dir/labs/lab6/randomleep2.c.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

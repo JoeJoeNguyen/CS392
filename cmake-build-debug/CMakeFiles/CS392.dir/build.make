@@ -321,6 +321,34 @@ CMakeFiles/CS392.dir/labs/lab3_files.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/CS392.dir/labs/lab3_files.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/joenguyen/CS392/labs/lab3_files.c -o CMakeFiles/CS392.dir/labs/lab3_files.c.s
 
+CMakeFiles/CS392.dir/labs/lab6/lab6_nforks.c.o: CMakeFiles/CS392.dir/flags.make
+CMakeFiles/CS392.dir/labs/lab6/lab6_nforks.c.o: /Users/joenguyen/CS392/labs/lab6/lab6_nforks.c
+CMakeFiles/CS392.dir/labs/lab6/lab6_nforks.c.o: CMakeFiles/CS392.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/joenguyen/CS392/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/CS392.dir/labs/lab6/lab6_nforks.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/CS392.dir/labs/lab6/lab6_nforks.c.o -MF CMakeFiles/CS392.dir/labs/lab6/lab6_nforks.c.o.d -o CMakeFiles/CS392.dir/labs/lab6/lab6_nforks.c.o -c /Users/joenguyen/CS392/labs/lab6/lab6_nforks.c
+
+CMakeFiles/CS392.dir/labs/lab6/lab6_nforks.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/CS392.dir/labs/lab6/lab6_nforks.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/joenguyen/CS392/labs/lab6/lab6_nforks.c > CMakeFiles/CS392.dir/labs/lab6/lab6_nforks.c.i
+
+CMakeFiles/CS392.dir/labs/lab6/lab6_nforks.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/CS392.dir/labs/lab6/lab6_nforks.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/joenguyen/CS392/labs/lab6/lab6_nforks.c -o CMakeFiles/CS392.dir/labs/lab6/lab6_nforks.c.s
+
+CMakeFiles/CS392.dir/labs/lab6/randomleep2.c.o: CMakeFiles/CS392.dir/flags.make
+CMakeFiles/CS392.dir/labs/lab6/randomleep2.c.o: /Users/joenguyen/CS392/labs/lab6/randomleep2.c
+CMakeFiles/CS392.dir/labs/lab6/randomleep2.c.o: CMakeFiles/CS392.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/joenguyen/CS392/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/CS392.dir/labs/lab6/randomleep2.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/CS392.dir/labs/lab6/randomleep2.c.o -MF CMakeFiles/CS392.dir/labs/lab6/randomleep2.c.o.d -o CMakeFiles/CS392.dir/labs/lab6/randomleep2.c.o -c /Users/joenguyen/CS392/labs/lab6/randomleep2.c
+
+CMakeFiles/CS392.dir/labs/lab6/randomleep2.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/CS392.dir/labs/lab6/randomleep2.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/joenguyen/CS392/labs/lab6/randomleep2.c > CMakeFiles/CS392.dir/labs/lab6/randomleep2.c.i
+
+CMakeFiles/CS392.dir/labs/lab6/randomleep2.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/CS392.dir/labs/lab6/randomleep2.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/joenguyen/CS392/labs/lab6/randomleep2.c -o CMakeFiles/CS392.dir/labs/lab6/randomleep2.c.s
+
 # Object files for target CS392
 CS392_OBJECTS = \
 "CMakeFiles/CS392.dir/hw2/hw2_starter_code/submission/bubble.c.o" \
@@ -340,7 +368,9 @@ CS392_OBJECTS = \
 "CMakeFiles/CS392.dir/labs/lab5/lab5_fork.c.o" \
 "CMakeFiles/CS392.dir/labs/lab2_fn_pointers_(1).c.o" \
 "CMakeFiles/CS392.dir/labs/lab2_fn_pointers.c.o" \
-"CMakeFiles/CS392.dir/labs/lab3_files.c.o"
+"CMakeFiles/CS392.dir/labs/lab3_files.c.o" \
+"CMakeFiles/CS392.dir/labs/lab6/lab6_nforks.c.o" \
+"CMakeFiles/CS392.dir/labs/lab6/randomleep2.c.o"
 
 # External object files for target CS392
 CS392_EXTERNAL_OBJECTS =
@@ -363,9 +393,11 @@ CS392: CMakeFiles/CS392.dir/labs/lab5/lab5_fork.c.o
 CS392: CMakeFiles/CS392.dir/labs/lab2_fn_pointers_(1).c.o
 CS392: CMakeFiles/CS392.dir/labs/lab2_fn_pointers.c.o
 CS392: CMakeFiles/CS392.dir/labs/lab3_files.c.o
+CS392: CMakeFiles/CS392.dir/labs/lab6/lab6_nforks.c.o
+CS392: CMakeFiles/CS392.dir/labs/lab6/randomleep2.c.o
 CS392: CMakeFiles/CS392.dir/build.make
 CS392: CMakeFiles/CS392.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/joenguyen/CS392/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Linking C executable CS392"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/joenguyen/CS392/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Linking C executable CS392"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/CS392.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

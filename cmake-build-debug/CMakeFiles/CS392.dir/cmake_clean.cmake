@@ -35,6 +35,10 @@ file(REMOVE_RECURSE
   "CMakeFiles/CS392.dir/labs/lab5/fork_intro.c.o.d"
   "CMakeFiles/CS392.dir/labs/lab5/lab5_fork.c.o"
   "CMakeFiles/CS392.dir/labs/lab5/lab5_fork.c.o.d"
+  "CMakeFiles/CS392.dir/labs/lab6/lab6_nforks.c.o"
+  "CMakeFiles/CS392.dir/labs/lab6/lab6_nforks.c.o.d"
+  "CMakeFiles/CS392.dir/labs/lab6/randomleep2.c.o"
+  "CMakeFiles/CS392.dir/labs/lab6/randomleep2.c.o.d"
   "CS392"
   "CS392.pdb"
 )
