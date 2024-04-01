@@ -34,4 +34,5 @@ add_executable(CS392
         labs/lab2_fn_pointers.c
         labs/lab3_files.c
         labs/lab6/lab6_nforks.c
-        labs/lab6/randomleep2.c)
+        labs/lab6/randomleep2.c
+        labs/lab7/lab7_prompt.c)
