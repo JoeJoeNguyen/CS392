@@ -8,170 +8,167 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/home/joejoe/github/CS392/cmake-build-debug"/>
+				<Option working_dir="/Users/joenguyen/CS392/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j16 -f &quot;/home/joejoe/github/CS392/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/gmake -j16 -f &quot;/home/joejoe/github/CS392/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j16 -f &quot;/home/joejoe/github/CS392/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j16 -f &quot;/home/joejoe/github/CS392/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j10 -f &quot;/Users/joenguyen/CS392/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j10 -f &quot;/Users/joenguyen/CS392/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j10 -f &quot;/Users/joenguyen/CS392/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j10 -f &quot;/Users/joenguyen/CS392/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="CS392">
-				<Option output="/home/joejoe/github/CS392/cmake-build-debug/CS392" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/joejoe/github/CS392/cmake-build-debug"/>
+				<Option output="/Users/joenguyen/CS392/cmake-build-debug/CS392" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/joenguyen/CS392/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/joejoe/github/CS392/hw2/hw2_starter_code"/>
-					<Add directory="/home/joejoe/github/CS392/hw3"/>
-					<Add directory="/home/joejoe/github/CS392/hw3/submission"/>
-					<Add directory="/home/joejoe/github/CS392/hw3/submission2.o"/>
-					<Add directory="/usr/include/c++/13"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/13"/>
-					<Add directory="/usr/include/c++/13/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/13/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
+					<Add directory="/Users/joenguyen/CS392/hw2/hw2_starter_code"/>
+					<Add directory="/Users/joenguyen/CS392/hw3"/>
+					<Add directory="/Users/joenguyen/CS392/hw3/submission"/>
+					<Add directory="/Users/joenguyen/CS392/hw3/submission2.o"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/15.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j16 -f &quot;/home/joejoe/github/CS392/cmake-build-debug/Makefile&quot;  VERBOSE=1 CS392"/>
-					<CompileFile command="/usr/bin/gmake -j16 -f &quot;/home/joejoe/github/CS392/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j16 -f &quot;/home/joejoe/github/CS392/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j16 -f &quot;/home/joejoe/github/CS392/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j10 -f &quot;/Users/joenguyen/CS392/cmake-build-debug/Makefile&quot;  VERBOSE=1 CS392"/>
+					<CompileFile command="/usr/bin/make -j10 -f &quot;/Users/joenguyen/CS392/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j10 -f &quot;/Users/joenguyen/CS392/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j10 -f &quot;/Users/joenguyen/CS392/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="CS392/fast">
-				<Option output="/home/joejoe/github/CS392/cmake-build-debug/CS392" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/joejoe/github/CS392/cmake-build-debug"/>
+				<Option output="/Users/joenguyen/CS392/cmake-build-debug/CS392" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/joenguyen/CS392/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/joejoe/github/CS392/hw2/hw2_starter_code"/>
-					<Add directory="/home/joejoe/github/CS392/hw3"/>
-					<Add directory="/home/joejoe/github/CS392/hw3/submission"/>
-					<Add directory="/home/joejoe/github/CS392/hw3/submission2.o"/>
-					<Add directory="/usr/include/c++/13"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/13"/>
-					<Add directory="/usr/include/c++/13/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/13/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
+					<Add directory="/Users/joenguyen/CS392/hw2/hw2_starter_code"/>
+					<Add directory="/Users/joenguyen/CS392/hw3"/>
+					<Add directory="/Users/joenguyen/CS392/hw3/submission"/>
+					<Add directory="/Users/joenguyen/CS392/hw3/submission2.o"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/15.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j16 -f &quot;/home/joejoe/github/CS392/cmake-build-debug/Makefile&quot;  VERBOSE=1 CS392/fast"/>
-					<CompileFile command="/usr/bin/gmake -j16 -f &quot;/home/joejoe/github/CS392/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j16 -f &quot;/home/joejoe/github/CS392/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j16 -f &quot;/home/joejoe/github/CS392/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j10 -f &quot;/Users/joenguyen/CS392/cmake-build-debug/Makefile&quot;  VERBOSE=1 CS392/fast"/>
+					<CompileFile command="/usr/bin/make -j10 -f &quot;/Users/joenguyen/CS392/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j10 -f &quot;/Users/joenguyen/CS392/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j10 -f &quot;/Users/joenguyen/CS392/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/home/joejoe/github/CS392/cmake-build-debug"/>
+				<Option working_dir="/Users/joenguyen/CS392/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j16 -f &quot;/home/joejoe/github/CS392/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/gmake -j16 -f &quot;/home/joejoe/github/CS392/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j16 -f &quot;/home/joejoe/github/CS392/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j16 -f &quot;/home/joejoe/github/CS392/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j10 -f &quot;/Users/joenguyen/CS392/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j10 -f &quot;/Users/joenguyen/CS392/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j10 -f &quot;/Users/joenguyen/CS392/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j10 -f &quot;/Users/joenguyen/CS392/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/home/joejoe/github/CS392/cmake-build-debug"/>
+				<Option working_dir="/Users/joenguyen/CS392/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j16 -f &quot;/home/joejoe/github/CS392/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/gmake -j16 -f &quot;/home/joejoe/github/CS392/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j16 -f &quot;/home/joejoe/github/CS392/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j16 -f &quot;/home/joejoe/github/CS392/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j10 -f &quot;/Users/joenguyen/CS392/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j10 -f &quot;/Users/joenguyen/CS392/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j10 -f &quot;/Users/joenguyen/CS392/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j10 -f &quot;/Users/joenguyen/CS392/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/joejoe/github/CS392/hw2/hw2_starter_code/bubble.c">
+		<Unit filename="/Users/joenguyen/CS392/hw2/hw2_starter_code/bubble.c">
 			<Option target="CS392"/>
 		</Unit>
-		<Unit filename="/home/joejoe/github/CS392/hw2/hw2_starter_code/bubble.h">
+		<Unit filename="/Users/joenguyen/CS392/hw2/hw2_starter_code/bubble.h">
 			<Option target="CS392"/>
 		</Unit>
-		<Unit filename="/home/joejoe/github/CS392/hw2/hw2_starter_code/main.c">
+		<Unit filename="/Users/joenguyen/CS392/hw2/hw2_starter_code/main.c">
 			<Option target="CS392"/>
 		</Unit>
-		<Unit filename="/home/joejoe/github/CS392/hw2/hw2_starter_code/submission/bubble.c">
+		<Unit filename="/Users/joenguyen/CS392/hw2/hw2_starter_code/submission/bubble.c">
 			<Option target="CS392"/>
 		</Unit>
-		<Unit filename="/home/joejoe/github/CS392/hw2/hw2_starter_code/submission/utils.c">
+		<Unit filename="/Users/joenguyen/CS392/hw2/hw2_starter_code/submission/utils.c">
 			<Option target="CS392"/>
 		</Unit>
-		<Unit filename="/home/joejoe/github/CS392/hw2/hw2_starter_code/utils.c">
+		<Unit filename="/Users/joenguyen/CS392/hw2/hw2_starter_code/utils.c">
 			<Option target="CS392"/>
 		</Unit>
-		<Unit filename="/home/joejoe/github/CS392/hw2/hw2_starter_code/utils.h">
+		<Unit filename="/Users/joenguyen/CS392/hw2/hw2_starter_code/utils.h">
 			<Option target="CS392"/>
 		</Unit>
-		<Unit filename="/home/joejoe/github/CS392/hw3.2/main.c">
+		<Unit filename="/Users/joenguyen/CS392/hw3.2/main.c">
 			<Option target="CS392"/>
 		</Unit>
-		<Unit filename="/home/joejoe/github/CS392/hw3/main.c">
+		<Unit filename="/Users/joenguyen/CS392/hw3/main.c">
 			<Option target="CS392"/>
 		</Unit>
-		<Unit filename="/home/joejoe/github/CS392/hw3/oocmerge.c">
+		<Unit filename="/Users/joenguyen/CS392/hw3/oocmerge.c">
 			<Option target="CS392"/>
 		</Unit>
-		<Unit filename="/home/joejoe/github/CS392/hw3/oocmerge.h">
+		<Unit filename="/Users/joenguyen/CS392/hw3/oocmerge.h">
 			<Option target="CS392"/>
 		</Unit>
-		<Unit filename="/home/joejoe/github/CS392/hw3/submission/main.c">
+		<Unit filename="/Users/joenguyen/CS392/hw3/submission/main.c">
 			<Option target="CS392"/>
 		</Unit>
-		<Unit filename="/home/joejoe/github/CS392/hw3/submission/oocmerge.c">
+		<Unit filename="/Users/joenguyen/CS392/hw3/submission/oocmerge.c">
 			<Option target="CS392"/>
 		</Unit>
-		<Unit filename="/home/joejoe/github/CS392/hw3/submission/oocmerge.h">
+		<Unit filename="/Users/joenguyen/CS392/hw3/submission/oocmerge.h">
 			<Option target="CS392"/>
 		</Unit>
-		<Unit filename="/home/joejoe/github/CS392/hw3/submission2.o/main.c">
+		<Unit filename="/Users/joenguyen/CS392/hw3/submission2.o/main.c">
 			<Option target="CS392"/>
 		</Unit>
-		<Unit filename="/home/joejoe/github/CS392/hw3/submission2.o/oocmerge.c">
+		<Unit filename="/Users/joenguyen/CS392/hw3/submission2.o/oocmerge.c">
 			<Option target="CS392"/>
 		</Unit>
-		<Unit filename="/home/joejoe/github/CS392/hw3/submission2.o/oocmerge.h">
+		<Unit filename="/Users/joenguyen/CS392/hw3/submission2.o/oocmerge.h">
 			<Option target="CS392"/>
 		</Unit>
-		<Unit filename="/home/joejoe/github/CS392/hw4/makefile">
+		<Unit filename="/Users/joenguyen/CS392/hw4/makefile">
 			<Option target="CS392"/>
 		</Unit>
-		<Unit filename="/home/joejoe/github/CS392/hw4/maxfile.c">
+		<Unit filename="/Users/joenguyen/CS392/hw4/maxfile.c">
 			<Option target="CS392"/>
 		</Unit>
-		<Unit filename="/home/joejoe/github/CS392/labs/lab2_fn_pointers (1).c">
+		<Unit filename="/Users/joenguyen/CS392/hw5/msh.c">
 			<Option target="CS392"/>
 		</Unit>
-		<Unit filename="/home/joejoe/github/CS392/labs/lab2_fn_pointers.c">
+		<Unit filename="/Users/joenguyen/CS392/labs/lab2_fn_pointers (1).c">
 			<Option target="CS392"/>
 		</Unit>
-		<Unit filename="/home/joejoe/github/CS392/labs/lab3_files.c">
+		<Unit filename="/Users/joenguyen/CS392/labs/lab2_fn_pointers.c">
 			<Option target="CS392"/>
 		</Unit>
-		<Unit filename="/home/joejoe/github/CS392/labs/lab5/fork_intro.c">
+		<Unit filename="/Users/joenguyen/CS392/labs/lab3_files.c">
 			<Option target="CS392"/>
 		</Unit>
-		<Unit filename="/home/joejoe/github/CS392/labs/lab5/lab5_fork.c">
+		<Unit filename="/Users/joenguyen/CS392/labs/lab5/fork_intro.c">
 			<Option target="CS392"/>
 		</Unit>
-		<Unit filename="/home/joejoe/github/CS392/labs/lab6/lab6_nforks.c">
+		<Unit filename="/Users/joenguyen/CS392/labs/lab5/lab5_fork.c">
 			<Option target="CS392"/>
 		</Unit>
-		<Unit filename="/home/joejoe/github/CS392/labs/lab6/randomleep2.c">
+		<Unit filename="/Users/joenguyen/CS392/labs/lab6/lab6_nforks.c">
 			<Option target="CS392"/>
 		</Unit>
-		<Unit filename="/home/joejoe/github/CS392/labs/lab7/lab7_prompt.c">
+		<Unit filename="/Users/joenguyen/CS392/labs/lab6/randomleep2.c">
 			<Option target="CS392"/>
 		</Unit>
-		<Unit filename="/home/joejoe/github/CS392/CMakeLists.txt">
+		<Unit filename="/Users/joenguyen/CS392/labs/lab7/lab7_prompt.c">
+			<Option target="CS392"/>
+		</Unit>
+		<Unit filename="/Users/joenguyen/CS392/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

@@ -25,6 +25,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/CS392.dir/hw3/submission2.o/oocmerge.c.o.d"
   "CMakeFiles/CS392.dir/hw4/maxfile.c.o"
   "CMakeFiles/CS392.dir/hw4/maxfile.c.o.d"
+  "CMakeFiles/CS392.dir/hw5/msh.c.o"
+  "CMakeFiles/CS392.dir/hw5/msh.c.o.d"
   "CMakeFiles/CS392.dir/labs/lab2_fn_pointers.c.o"
   "CMakeFiles/CS392.dir/labs/lab2_fn_pointers.c.o.d"
   "CMakeFiles/CS392.dir/labs/lab2_fn_pointers_(1).c.o"
