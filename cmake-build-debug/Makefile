@@ -48,19 +48,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = "/Users/joenguyen/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/233.14475.31/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake"
+CMAKE_COMMAND = /snap/clion/265/bin/cmake/linux/x64/bin/cmake
 
 # The command to remove a file.
-RM = "/Users/joenguyen/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/233.14475.31/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake" -E rm -f
+RM = /snap/clion/265/bin/cmake/linux/x64/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/joenguyen/CS392
+CMAKE_SOURCE_DIR = /home/joejoe/github/CS392
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/joenguyen/CS392/cmake-build-debug
+CMAKE_BINARY_DIR = /home/joejoe/github/CS392/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -68,7 +68,7 @@ CMAKE_BINARY_DIR = /Users/joenguyen/CS392/cmake-build-debug
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "No interactive CMake dialog available..."
-	"/Users/joenguyen/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/233.14475.31/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake" -E echo No\ interactive\ CMake\ dialog\ available.
+	/snap/clion/265/bin/cmake/linux/x64/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -78,7 +78,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running CMake to regenerate build system..."
-	"/Users/joenguyen/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/233.14475.31/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake" --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/snap/clion/265/bin/cmake/linux/x64/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/joenguyen/CS392/cmake-build-debug/CMakeFiles /Users/joenguyen/CS392/cmake-build-debug//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/joejoe/github/CS392/cmake-build-debug/CMakeFiles /home/joejoe/github/CS392/cmake-build-debug//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/joenguyen/CS392/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/joejoe/github/CS392/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -441,6 +441,30 @@ hw4/maxfile.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CS392.dir/build.make CMakeFiles/CS392.dir/hw4/maxfile.c.s
 .PHONY : hw4/maxfile.c.s
 
+hw5/harris.o: hw5/harris.c.o
+.PHONY : hw5/harris.o
+
+# target to build an object file
+hw5/harris.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CS392.dir/build.make CMakeFiles/CS392.dir/hw5/harris.c.o
+.PHONY : hw5/harris.c.o
+
+hw5/harris.i: hw5/harris.c.i
+.PHONY : hw5/harris.i
+
+# target to preprocess a source file
+hw5/harris.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CS392.dir/build.make CMakeFiles/CS392.dir/hw5/harris.c.i
+.PHONY : hw5/harris.c.i
+
+hw5/harris.s: hw5/harris.c.s
+.PHONY : hw5/harris.s
+
+# target to generate assembly for a file
+hw5/harris.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CS392.dir/build.make CMakeFiles/CS392.dir/hw5/harris.c.s
+.PHONY : hw5/harris.c.s
+
 hw5/msh.o: hw5/msh.c.o
 .PHONY : hw5/msh.o
 
@@ -705,6 +729,9 @@ help:
 	@echo "... hw4/maxfile.o"
 	@echo "... hw4/maxfile.i"
 	@echo "... hw4/maxfile.s"
+	@echo "... hw5/harris.o"
+	@echo "... hw5/harris.i"
+	@echo "... hw5/harris.s"
 	@echo "... hw5/msh.o"
 	@echo "... hw5/msh.i"
 	@echo "... hw5/msh.s"

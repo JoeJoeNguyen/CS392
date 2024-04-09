@@ -60,26 +60,26 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -fcolor-diagnostics"
+					"fragment" : "-g -fdiagnostics-color=always"
 				}
 			],
 			"includes" : 
 			[
 				{
 					"backtrace" : 2,
-					"path" : "/Users/joenguyen/CS392/hw2/hw2_starter_code"
+					"path" : "/home/joejoe/github/CS392/hw2/hw2_starter_code"
 				},
 				{
 					"backtrace" : 3,
-					"path" : "/Users/joenguyen/CS392/hw3"
+					"path" : "/home/joejoe/github/CS392/hw3"
 				},
 				{
 					"backtrace" : 4,
-					"path" : "/Users/joenguyen/CS392/hw3/submission"
+					"path" : "/home/joejoe/github/CS392/hw3/submission"
 				},
 				{
 					"backtrace" : 5,
-					"path" : "/Users/joenguyen/CS392/hw3/submission2.o"
+					"path" : "/home/joejoe/github/CS392/hw3/submission2.o"
 				}
 			],
 			"language" : "C",
@@ -106,7 +106,8 @@
 				24,
 				25,
 				26,
-				27
+				27,
+				28
 			]
 		}
 	],
@@ -160,7 +161,8 @@
 				24,
 				25,
 				26,
-				27
+				27,
+				28
 			]
 		},
 		{
@@ -344,6 +346,12 @@
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
 			"path" : "hw5/msh.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "hw5/harris.c",
 			"sourceGroupIndex" : 0
 		}
 	],

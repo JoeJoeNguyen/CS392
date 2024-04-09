@@ -36,4 +36,6 @@ add_executable(CS392
         labs/lab6/lab6_nforks.c
         labs/lab6/randomleep2.c
         labs/lab7/lab7_prompt.c
-        hw5/msh.c)
+        hw5/msh.c
+        hw5/harris.c
+        hw5/harris.c)
