@@ -29,6 +29,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/CS392.dir/hw5/harris.c.o.d"
   "CMakeFiles/CS392.dir/hw5/msh.c.o"
   "CMakeFiles/CS392.dir/hw5/msh.c.o.d"
+  "CMakeFiles/CS392.dir/hw5/sighandler.c.o"
+  "CMakeFiles/CS392.dir/hw5/sighandler.c.o.d"
   "CMakeFiles/CS392.dir/labs/lab2_fn_pointers.c.o"
   "CMakeFiles/CS392.dir/labs/lab2_fn_pointers.c.o.d"
   "CMakeFiles/CS392.dir/labs/lab2_fn_pointers_(1).c.o"

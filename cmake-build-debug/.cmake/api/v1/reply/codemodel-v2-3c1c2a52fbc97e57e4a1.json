@@ -39,7 +39,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "CS392::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-CS392-Debug-b7a44baff6c1de1b8ed3.json",
+					"jsonFile" : "target-CS392-Debug-7fe220dff1743e553836.json",
 					"name" : "CS392",
 					"projectIndex" : 0
 				}
@@ -49,8 +49,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/home/joejoe/github/CS392/cmake-build-debug",
-		"source" : "/home/joejoe/github/CS392"
+		"build" : "/Users/joenguyen/CS392/cmake-build-debug",
+		"source" : "/Users/joenguyen/CS392"
 	},
 	"version" : 
 	{

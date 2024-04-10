@@ -38,4 +38,6 @@ add_executable(CS392
         labs/lab7/lab7_prompt.c
         hw5/msh.c
         hw5/harris.c
-        hw5/harris.c)
+        hw5/harris.c
+        hw5/sighandler.c
+        hw5/sighandler.h)
