@@ -47,6 +47,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/CS392.dir/labs/lab6/randomleep2.c.o.d"
   "CMakeFiles/CS392.dir/labs/lab7/lab7_prompt.c.o"
   "CMakeFiles/CS392.dir/labs/lab7/lab7_prompt.c.o.d"
+  "CMakeFiles/CS392.dir/labs/lab8/lab8_pipe_add.c.o"
+  "CMakeFiles/CS392.dir/labs/lab8/lab8_pipe_add.c.o.d"
   "CS392"
   "CS392.pdb"
 )

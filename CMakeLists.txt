@@ -40,4 +40,8 @@ add_executable(CS392
         hw5/harris.c
         hw5/harris.c
         hw5/sighandler.c
-        hw5/sighandler.h)
+        hw5/sighandler.h
+        labs/lab8/lab8_pipe_add.c
+        labs/lab8/lab8_pipe_add.c
+        labs/lab8/lab8_pipe_add.c
+)

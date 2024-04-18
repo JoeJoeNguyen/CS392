@@ -705,6 +705,30 @@ labs/lab7/lab7_prompt.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CS392.dir/build.make CMakeFiles/CS392.dir/labs/lab7/lab7_prompt.c.s
 .PHONY : labs/lab7/lab7_prompt.c.s
 
+labs/lab8/lab8_pipe_add.o: labs/lab8/lab8_pipe_add.c.o
+.PHONY : labs/lab8/lab8_pipe_add.o
+
+# target to build an object file
+labs/lab8/lab8_pipe_add.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CS392.dir/build.make CMakeFiles/CS392.dir/labs/lab8/lab8_pipe_add.c.o
+.PHONY : labs/lab8/lab8_pipe_add.c.o
+
+labs/lab8/lab8_pipe_add.i: labs/lab8/lab8_pipe_add.c.i
+.PHONY : labs/lab8/lab8_pipe_add.i
+
+# target to preprocess a source file
+labs/lab8/lab8_pipe_add.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CS392.dir/build.make CMakeFiles/CS392.dir/labs/lab8/lab8_pipe_add.c.i
+.PHONY : labs/lab8/lab8_pipe_add.c.i
+
+labs/lab8/lab8_pipe_add.s: labs/lab8/lab8_pipe_add.c.s
+.PHONY : labs/lab8/lab8_pipe_add.s
+
+# target to generate assembly for a file
+labs/lab8/lab8_pipe_add.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CS392.dir/build.make CMakeFiles/CS392.dir/labs/lab8/lab8_pipe_add.c.s
+.PHONY : labs/lab8/lab8_pipe_add.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -786,6 +810,9 @@ help:
 	@echo "... labs/lab7/lab7_prompt.o"
 	@echo "... labs/lab7/lab7_prompt.i"
 	@echo "... labs/lab7/lab7_prompt.s"
+	@echo "... labs/lab8/lab8_pipe_add.o"
+	@echo "... labs/lab8/lab8_pipe_add.i"
+	@echo "... labs/lab8/lab8_pipe_add.s"
 .PHONY : help
 
 

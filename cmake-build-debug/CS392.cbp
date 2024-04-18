@@ -177,6 +177,9 @@
 		<Unit filename="/Users/joenguyen/CS392/labs/lab7/lab7_prompt.c">
 			<Option target="CS392"/>
 		</Unit>
+		<Unit filename="/Users/joenguyen/CS392/labs/lab8/lab8_pipe_add.c">
+			<Option target="CS392"/>
+		</Unit>
 		<Unit filename="/Users/joenguyen/CS392/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
