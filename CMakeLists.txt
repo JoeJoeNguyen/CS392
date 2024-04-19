@@ -44,4 +44,5 @@ add_executable(CS392
         labs/lab8/lab8_pipe_add.c
         labs/lab8/lab8_pipe_add.c
         labs/lab8/lab8_pipe_add.c
+        hw6/hw6.c
 )

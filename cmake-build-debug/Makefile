@@ -513,6 +513,30 @@ hw5/sighandler.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CS392.dir/build.make CMakeFiles/CS392.dir/hw5/sighandler.c.s
 .PHONY : hw5/sighandler.c.s
 
+hw6/hw6.o: hw6/hw6.c.o
+.PHONY : hw6/hw6.o
+
+# target to build an object file
+hw6/hw6.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CS392.dir/build.make CMakeFiles/CS392.dir/hw6/hw6.c.o
+.PHONY : hw6/hw6.c.o
+
+hw6/hw6.i: hw6/hw6.c.i
+.PHONY : hw6/hw6.i
+
+# target to preprocess a source file
+hw6/hw6.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CS392.dir/build.make CMakeFiles/CS392.dir/hw6/hw6.c.i
+.PHONY : hw6/hw6.c.i
+
+hw6/hw6.s: hw6/hw6.c.s
+.PHONY : hw6/hw6.s
+
+# target to generate assembly for a file
+hw6/hw6.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CS392.dir/build.make CMakeFiles/CS392.dir/hw6/hw6.c.s
+.PHONY : hw6/hw6.c.s
+
 labs/lab2_fn_pointers.o: labs/lab2_fn_pointers.c.o
 .PHONY : labs/lab2_fn_pointers.o
 
@@ -786,6 +810,9 @@ help:
 	@echo "... hw5/sighandler.o"
 	@echo "... hw5/sighandler.i"
 	@echo "... hw5/sighandler.s"
+	@echo "... hw6/hw6.o"
+	@echo "... hw6/hw6.i"
+	@echo "... hw6/hw6.s"
 	@echo "... labs/lab2_fn_pointers.o"
 	@echo "... labs/lab2_fn_pointers.i"
 	@echo "... labs/lab2_fn_pointers.s"

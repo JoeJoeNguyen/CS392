@@ -24,6 +24,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/joenguyen/CS392/hw5/harris.c" "CMakeFiles/CS392.dir/hw5/harris.c.o" "gcc" "CMakeFiles/CS392.dir/hw5/harris.c.o.d"
   "/Users/joenguyen/CS392/hw5/msh.c" "CMakeFiles/CS392.dir/hw5/msh.c.o" "gcc" "CMakeFiles/CS392.dir/hw5/msh.c.o.d"
   "/Users/joenguyen/CS392/hw5/sighandler.c" "CMakeFiles/CS392.dir/hw5/sighandler.c.o" "gcc" "CMakeFiles/CS392.dir/hw5/sighandler.c.o.d"
+  "/Users/joenguyen/CS392/hw6/hw6.c" "CMakeFiles/CS392.dir/hw6/hw6.c.o" "gcc" "CMakeFiles/CS392.dir/hw6/hw6.c.o.d"
   "/Users/joenguyen/CS392/labs/lab2_fn_pointers.c" "CMakeFiles/CS392.dir/labs/lab2_fn_pointers.c.o" "gcc" "CMakeFiles/CS392.dir/labs/lab2_fn_pointers.c.o.d"
   "/Users/joenguyen/CS392/labs/lab2_fn_pointers (1).c" "CMakeFiles/CS392.dir/labs/lab2_fn_pointers_(1).c.o" "gcc" "CMakeFiles/CS392.dir/labs/lab2_fn_pointers_(1).c.o.d"
   "/Users/joenguyen/CS392/labs/lab3_files.c" "CMakeFiles/CS392.dir/labs/lab3_files.c.o" "gcc" "CMakeFiles/CS392.dir/labs/lab3_files.c.o.d"

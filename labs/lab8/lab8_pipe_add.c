@@ -35,7 +35,7 @@ int main(int argc, char *argv[]) {
 
     if((pid = fork()) < 0){
         return 1;
-    } else if(pid <= 0){ //child
+    } else if(pid == 0){ //child
         close(fd[0]);
         write(fd[1], "1", 1);
         write(fd[1], "3", 1);
