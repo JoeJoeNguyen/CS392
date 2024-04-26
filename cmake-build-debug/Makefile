@@ -753,6 +753,54 @@ labs/lab8/lab8_pipe_add.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CS392.dir/build.make CMakeFiles/CS392.dir/labs/lab8/lab8_pipe_add.c.s
 .PHONY : labs/lab8/lab8_pipe_add.c.s
 
+labs/lab9/lab9_findserver.o: labs/lab9/lab9_findserver.c.o
+.PHONY : labs/lab9/lab9_findserver.o
+
+# target to build an object file
+labs/lab9/lab9_findserver.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CS392.dir/build.make CMakeFiles/CS392.dir/labs/lab9/lab9_findserver.c.o
+.PHONY : labs/lab9/lab9_findserver.c.o
+
+labs/lab9/lab9_findserver.i: labs/lab9/lab9_findserver.c.i
+.PHONY : labs/lab9/lab9_findserver.i
+
+# target to preprocess a source file
+labs/lab9/lab9_findserver.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CS392.dir/build.make CMakeFiles/CS392.dir/labs/lab9/lab9_findserver.c.i
+.PHONY : labs/lab9/lab9_findserver.c.i
+
+labs/lab9/lab9_findserver.s: labs/lab9/lab9_findserver.c.s
+.PHONY : labs/lab9/lab9_findserver.s
+
+# target to generate assembly for a file
+labs/lab9/lab9_findserver.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CS392.dir/build.make CMakeFiles/CS392.dir/labs/lab9/lab9_findserver.c.s
+.PHONY : labs/lab9/lab9_findserver.c.s
+
+socket_examples/binarytides_client.o: socket_examples/binarytides_client.c.o
+.PHONY : socket_examples/binarytides_client.o
+
+# target to build an object file
+socket_examples/binarytides_client.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CS392.dir/build.make CMakeFiles/CS392.dir/socket_examples/binarytides_client.c.o
+.PHONY : socket_examples/binarytides_client.c.o
+
+socket_examples/binarytides_client.i: socket_examples/binarytides_client.c.i
+.PHONY : socket_examples/binarytides_client.i
+
+# target to preprocess a source file
+socket_examples/binarytides_client.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CS392.dir/build.make CMakeFiles/CS392.dir/socket_examples/binarytides_client.c.i
+.PHONY : socket_examples/binarytides_client.c.i
+
+socket_examples/binarytides_client.s: socket_examples/binarytides_client.c.s
+.PHONY : socket_examples/binarytides_client.s
+
+# target to generate assembly for a file
+socket_examples/binarytides_client.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CS392.dir/build.make CMakeFiles/CS392.dir/socket_examples/binarytides_client.c.s
+.PHONY : socket_examples/binarytides_client.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -840,6 +888,12 @@ help:
 	@echo "... labs/lab8/lab8_pipe_add.o"
 	@echo "... labs/lab8/lab8_pipe_add.i"
 	@echo "... labs/lab8/lab8_pipe_add.s"
+	@echo "... labs/lab9/lab9_findserver.o"
+	@echo "... labs/lab9/lab9_findserver.i"
+	@echo "... labs/lab9/lab9_findserver.s"
+	@echo "... socket_examples/binarytides_client.o"
+	@echo "... socket_examples/binarytides_client.i"
+	@echo "... socket_examples/binarytides_client.s"
 .PHONY : help
 
 

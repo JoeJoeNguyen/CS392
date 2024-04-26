@@ -183,6 +183,12 @@
 		<Unit filename="/Users/joenguyen/CS392/labs/lab8/lab8_pipe_add.c">
 			<Option target="CS392"/>
 		</Unit>
+		<Unit filename="/Users/joenguyen/CS392/labs/lab9/lab9_findserver.c">
+			<Option target="CS392"/>
+		</Unit>
+		<Unit filename="/Users/joenguyen/CS392/socket_examples/binarytides_client.c">
+			<Option target="CS392"/>
+		</Unit>
 		<Unit filename="/Users/joenguyen/CS392/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

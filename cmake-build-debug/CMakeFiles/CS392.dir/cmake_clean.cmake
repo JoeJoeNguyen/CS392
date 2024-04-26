@@ -51,6 +51,10 @@ file(REMOVE_RECURSE
   "CMakeFiles/CS392.dir/labs/lab7/lab7_prompt.c.o.d"
   "CMakeFiles/CS392.dir/labs/lab8/lab8_pipe_add.c.o"
   "CMakeFiles/CS392.dir/labs/lab8/lab8_pipe_add.c.o.d"
+  "CMakeFiles/CS392.dir/labs/lab9/lab9_findserver.c.o"
+  "CMakeFiles/CS392.dir/labs/lab9/lab9_findserver.c.o.d"
+  "CMakeFiles/CS392.dir/socket_examples/binarytides_client.c.o"
+  "CMakeFiles/CS392.dir/socket_examples/binarytides_client.c.o.d"
   "CS392"
   "CS392.pdb"
 )

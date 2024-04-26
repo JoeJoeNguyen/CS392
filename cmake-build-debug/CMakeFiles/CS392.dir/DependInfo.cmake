@@ -34,6 +34,8 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/joenguyen/CS392/labs/lab6/randomleep2.c" "CMakeFiles/CS392.dir/labs/lab6/randomleep2.c.o" "gcc" "CMakeFiles/CS392.dir/labs/lab6/randomleep2.c.o.d"
   "/Users/joenguyen/CS392/labs/lab7/lab7_prompt.c" "CMakeFiles/CS392.dir/labs/lab7/lab7_prompt.c.o" "gcc" "CMakeFiles/CS392.dir/labs/lab7/lab7_prompt.c.o.d"
   "/Users/joenguyen/CS392/labs/lab8/lab8_pipe_add.c" "CMakeFiles/CS392.dir/labs/lab8/lab8_pipe_add.c.o" "gcc" "CMakeFiles/CS392.dir/labs/lab8/lab8_pipe_add.c.o.d"
+  "/Users/joenguyen/CS392/labs/lab9/lab9_findserver.c" "CMakeFiles/CS392.dir/labs/lab9/lab9_findserver.c.o" "gcc" "CMakeFiles/CS392.dir/labs/lab9/lab9_findserver.c.o.d"
+  "/Users/joenguyen/CS392/socket_examples/binarytides_client.c" "CMakeFiles/CS392.dir/socket_examples/binarytides_client.c.o" "gcc" "CMakeFiles/CS392.dir/socket_examples/binarytides_client.c.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

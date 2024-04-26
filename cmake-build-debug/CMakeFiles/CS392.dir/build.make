@@ -433,6 +433,34 @@ CMakeFiles/CS392.dir/hw6/hw6.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/CS392.dir/hw6/hw6.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/joenguyen/CS392/hw6/hw6.c -o CMakeFiles/CS392.dir/hw6/hw6.c.s
 
+CMakeFiles/CS392.dir/labs/lab9/lab9_findserver.c.o: CMakeFiles/CS392.dir/flags.make
+CMakeFiles/CS392.dir/labs/lab9/lab9_findserver.c.o: /Users/joenguyen/CS392/labs/lab9/lab9_findserver.c
+CMakeFiles/CS392.dir/labs/lab9/lab9_findserver.c.o: CMakeFiles/CS392.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/joenguyen/CS392/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/CS392.dir/labs/lab9/lab9_findserver.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/CS392.dir/labs/lab9/lab9_findserver.c.o -MF CMakeFiles/CS392.dir/labs/lab9/lab9_findserver.c.o.d -o CMakeFiles/CS392.dir/labs/lab9/lab9_findserver.c.o -c /Users/joenguyen/CS392/labs/lab9/lab9_findserver.c
+
+CMakeFiles/CS392.dir/labs/lab9/lab9_findserver.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/CS392.dir/labs/lab9/lab9_findserver.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/joenguyen/CS392/labs/lab9/lab9_findserver.c > CMakeFiles/CS392.dir/labs/lab9/lab9_findserver.c.i
+
+CMakeFiles/CS392.dir/labs/lab9/lab9_findserver.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/CS392.dir/labs/lab9/lab9_findserver.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/joenguyen/CS392/labs/lab9/lab9_findserver.c -o CMakeFiles/CS392.dir/labs/lab9/lab9_findserver.c.s
+
+CMakeFiles/CS392.dir/socket_examples/binarytides_client.c.o: CMakeFiles/CS392.dir/flags.make
+CMakeFiles/CS392.dir/socket_examples/binarytides_client.c.o: /Users/joenguyen/CS392/socket_examples/binarytides_client.c
+CMakeFiles/CS392.dir/socket_examples/binarytides_client.c.o: CMakeFiles/CS392.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/joenguyen/CS392/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/CS392.dir/socket_examples/binarytides_client.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/CS392.dir/socket_examples/binarytides_client.c.o -MF CMakeFiles/CS392.dir/socket_examples/binarytides_client.c.o.d -o CMakeFiles/CS392.dir/socket_examples/binarytides_client.c.o -c /Users/joenguyen/CS392/socket_examples/binarytides_client.c
+
+CMakeFiles/CS392.dir/socket_examples/binarytides_client.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/CS392.dir/socket_examples/binarytides_client.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/joenguyen/CS392/socket_examples/binarytides_client.c > CMakeFiles/CS392.dir/socket_examples/binarytides_client.c.i
+
+CMakeFiles/CS392.dir/socket_examples/binarytides_client.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/CS392.dir/socket_examples/binarytides_client.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/joenguyen/CS392/socket_examples/binarytides_client.c -o CMakeFiles/CS392.dir/socket_examples/binarytides_client.c.s
+
 # Object files for target CS392
 CS392_OBJECTS = \
 "CMakeFiles/CS392.dir/hw2/hw2_starter_code/submission/bubble.c.o" \
@@ -460,7 +488,9 @@ CS392_OBJECTS = \
 "CMakeFiles/CS392.dir/hw5/harris.c.o" \
 "CMakeFiles/CS392.dir/hw5/sighandler.c.o" \
 "CMakeFiles/CS392.dir/labs/lab8/lab8_pipe_add.c.o" \
-"CMakeFiles/CS392.dir/hw6/hw6.c.o"
+"CMakeFiles/CS392.dir/hw6/hw6.c.o" \
+"CMakeFiles/CS392.dir/labs/lab9/lab9_findserver.c.o" \
+"CMakeFiles/CS392.dir/socket_examples/binarytides_client.c.o"
 
 # External object files for target CS392
 CS392_EXTERNAL_OBJECTS =
@@ -491,9 +521,11 @@ CS392: CMakeFiles/CS392.dir/hw5/harris.c.o
 CS392: CMakeFiles/CS392.dir/hw5/sighandler.c.o
 CS392: CMakeFiles/CS392.dir/labs/lab8/lab8_pipe_add.c.o
 CS392: CMakeFiles/CS392.dir/hw6/hw6.c.o
+CS392: CMakeFiles/CS392.dir/labs/lab9/lab9_findserver.c.o
+CS392: CMakeFiles/CS392.dir/socket_examples/binarytides_client.c.o
 CS392: CMakeFiles/CS392.dir/build.make
 CS392: CMakeFiles/CS392.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/joenguyen/CS392/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Linking C executable CS392"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/joenguyen/CS392/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Linking C executable CS392"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/CS392.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
