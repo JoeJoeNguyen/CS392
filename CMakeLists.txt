@@ -47,4 +47,11 @@ add_executable(CS392
         hw6/hw6.c
         labs/lab9/lab9_findserver.c
         socket_examples/binarytides_client.c
+        socket_examples/binarytides_server.c
+        socket_examples/BrownyLin_server.c
+        socket_examples/BrownyLin_client.c
+        hw7/client.c
+        hw7/server.c
+        socket_examples/geeks_server.c
+        socket_examples/geeks_client.c
 )

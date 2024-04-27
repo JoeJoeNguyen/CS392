@@ -156,6 +156,12 @@
 		<Unit filename="/Users/joenguyen/CS392/hw6/hw6.c">
 			<Option target="CS392"/>
 		</Unit>
+		<Unit filename="/Users/joenguyen/CS392/hw7/client.c">
+			<Option target="CS392"/>
+		</Unit>
+		<Unit filename="/Users/joenguyen/CS392/hw7/server.c">
+			<Option target="CS392"/>
+		</Unit>
 		<Unit filename="/Users/joenguyen/CS392/labs/lab2_fn_pointers (1).c">
 			<Option target="CS392"/>
 		</Unit>
@@ -186,7 +192,22 @@
 		<Unit filename="/Users/joenguyen/CS392/labs/lab9/lab9_findserver.c">
 			<Option target="CS392"/>
 		</Unit>
+		<Unit filename="/Users/joenguyen/CS392/socket_examples/BrownyLin_client.c">
+			<Option target="CS392"/>
+		</Unit>
+		<Unit filename="/Users/joenguyen/CS392/socket_examples/BrownyLin_server.c">
+			<Option target="CS392"/>
+		</Unit>
 		<Unit filename="/Users/joenguyen/CS392/socket_examples/binarytides_client.c">
+			<Option target="CS392"/>
+		</Unit>
+		<Unit filename="/Users/joenguyen/CS392/socket_examples/binarytides_server.c">
+			<Option target="CS392"/>
+		</Unit>
+		<Unit filename="/Users/joenguyen/CS392/socket_examples/geeks_client.c">
+			<Option target="CS392"/>
+		</Unit>
+		<Unit filename="/Users/joenguyen/CS392/socket_examples/geeks_server.c">
 			<Option target="CS392"/>
 		</Unit>
 		<Unit filename="/Users/joenguyen/CS392/CMakeLists.txt">

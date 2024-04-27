@@ -537,6 +537,54 @@ hw6/hw6.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CS392.dir/build.make CMakeFiles/CS392.dir/hw6/hw6.c.s
 .PHONY : hw6/hw6.c.s
 
+hw7/client.o: hw7/client.c.o
+.PHONY : hw7/client.o
+
+# target to build an object file
+hw7/client.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CS392.dir/build.make CMakeFiles/CS392.dir/hw7/client.c.o
+.PHONY : hw7/client.c.o
+
+hw7/client.i: hw7/client.c.i
+.PHONY : hw7/client.i
+
+# target to preprocess a source file
+hw7/client.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CS392.dir/build.make CMakeFiles/CS392.dir/hw7/client.c.i
+.PHONY : hw7/client.c.i
+
+hw7/client.s: hw7/client.c.s
+.PHONY : hw7/client.s
+
+# target to generate assembly for a file
+hw7/client.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CS392.dir/build.make CMakeFiles/CS392.dir/hw7/client.c.s
+.PHONY : hw7/client.c.s
+
+hw7/server.o: hw7/server.c.o
+.PHONY : hw7/server.o
+
+# target to build an object file
+hw7/server.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CS392.dir/build.make CMakeFiles/CS392.dir/hw7/server.c.o
+.PHONY : hw7/server.c.o
+
+hw7/server.i: hw7/server.c.i
+.PHONY : hw7/server.i
+
+# target to preprocess a source file
+hw7/server.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CS392.dir/build.make CMakeFiles/CS392.dir/hw7/server.c.i
+.PHONY : hw7/server.c.i
+
+hw7/server.s: hw7/server.c.s
+.PHONY : hw7/server.s
+
+# target to generate assembly for a file
+hw7/server.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CS392.dir/build.make CMakeFiles/CS392.dir/hw7/server.c.s
+.PHONY : hw7/server.c.s
+
 labs/lab2_fn_pointers.o: labs/lab2_fn_pointers.c.o
 .PHONY : labs/lab2_fn_pointers.o
 
@@ -777,6 +825,54 @@ labs/lab9/lab9_findserver.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CS392.dir/build.make CMakeFiles/CS392.dir/labs/lab9/lab9_findserver.c.s
 .PHONY : labs/lab9/lab9_findserver.c.s
 
+socket_examples/BrownyLin_client.o: socket_examples/BrownyLin_client.c.o
+.PHONY : socket_examples/BrownyLin_client.o
+
+# target to build an object file
+socket_examples/BrownyLin_client.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CS392.dir/build.make CMakeFiles/CS392.dir/socket_examples/BrownyLin_client.c.o
+.PHONY : socket_examples/BrownyLin_client.c.o
+
+socket_examples/BrownyLin_client.i: socket_examples/BrownyLin_client.c.i
+.PHONY : socket_examples/BrownyLin_client.i
+
+# target to preprocess a source file
+socket_examples/BrownyLin_client.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CS392.dir/build.make CMakeFiles/CS392.dir/socket_examples/BrownyLin_client.c.i
+.PHONY : socket_examples/BrownyLin_client.c.i
+
+socket_examples/BrownyLin_client.s: socket_examples/BrownyLin_client.c.s
+.PHONY : socket_examples/BrownyLin_client.s
+
+# target to generate assembly for a file
+socket_examples/BrownyLin_client.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CS392.dir/build.make CMakeFiles/CS392.dir/socket_examples/BrownyLin_client.c.s
+.PHONY : socket_examples/BrownyLin_client.c.s
+
+socket_examples/BrownyLin_server.o: socket_examples/BrownyLin_server.c.o
+.PHONY : socket_examples/BrownyLin_server.o
+
+# target to build an object file
+socket_examples/BrownyLin_server.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CS392.dir/build.make CMakeFiles/CS392.dir/socket_examples/BrownyLin_server.c.o
+.PHONY : socket_examples/BrownyLin_server.c.o
+
+socket_examples/BrownyLin_server.i: socket_examples/BrownyLin_server.c.i
+.PHONY : socket_examples/BrownyLin_server.i
+
+# target to preprocess a source file
+socket_examples/BrownyLin_server.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CS392.dir/build.make CMakeFiles/CS392.dir/socket_examples/BrownyLin_server.c.i
+.PHONY : socket_examples/BrownyLin_server.c.i
+
+socket_examples/BrownyLin_server.s: socket_examples/BrownyLin_server.c.s
+.PHONY : socket_examples/BrownyLin_server.s
+
+# target to generate assembly for a file
+socket_examples/BrownyLin_server.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CS392.dir/build.make CMakeFiles/CS392.dir/socket_examples/BrownyLin_server.c.s
+.PHONY : socket_examples/BrownyLin_server.c.s
+
 socket_examples/binarytides_client.o: socket_examples/binarytides_client.c.o
 .PHONY : socket_examples/binarytides_client.o
 
@@ -800,6 +896,78 @@ socket_examples/binarytides_client.s: socket_examples/binarytides_client.c.s
 socket_examples/binarytides_client.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CS392.dir/build.make CMakeFiles/CS392.dir/socket_examples/binarytides_client.c.s
 .PHONY : socket_examples/binarytides_client.c.s
+
+socket_examples/binarytides_server.o: socket_examples/binarytides_server.c.o
+.PHONY : socket_examples/binarytides_server.o
+
+# target to build an object file
+socket_examples/binarytides_server.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CS392.dir/build.make CMakeFiles/CS392.dir/socket_examples/binarytides_server.c.o
+.PHONY : socket_examples/binarytides_server.c.o
+
+socket_examples/binarytides_server.i: socket_examples/binarytides_server.c.i
+.PHONY : socket_examples/binarytides_server.i
+
+# target to preprocess a source file
+socket_examples/binarytides_server.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CS392.dir/build.make CMakeFiles/CS392.dir/socket_examples/binarytides_server.c.i
+.PHONY : socket_examples/binarytides_server.c.i
+
+socket_examples/binarytides_server.s: socket_examples/binarytides_server.c.s
+.PHONY : socket_examples/binarytides_server.s
+
+# target to generate assembly for a file
+socket_examples/binarytides_server.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CS392.dir/build.make CMakeFiles/CS392.dir/socket_examples/binarytides_server.c.s
+.PHONY : socket_examples/binarytides_server.c.s
+
+socket_examples/geeks_client.o: socket_examples/geeks_client.c.o
+.PHONY : socket_examples/geeks_client.o
+
+# target to build an object file
+socket_examples/geeks_client.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CS392.dir/build.make CMakeFiles/CS392.dir/socket_examples/geeks_client.c.o
+.PHONY : socket_examples/geeks_client.c.o
+
+socket_examples/geeks_client.i: socket_examples/geeks_client.c.i
+.PHONY : socket_examples/geeks_client.i
+
+# target to preprocess a source file
+socket_examples/geeks_client.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CS392.dir/build.make CMakeFiles/CS392.dir/socket_examples/geeks_client.c.i
+.PHONY : socket_examples/geeks_client.c.i
+
+socket_examples/geeks_client.s: socket_examples/geeks_client.c.s
+.PHONY : socket_examples/geeks_client.s
+
+# target to generate assembly for a file
+socket_examples/geeks_client.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CS392.dir/build.make CMakeFiles/CS392.dir/socket_examples/geeks_client.c.s
+.PHONY : socket_examples/geeks_client.c.s
+
+socket_examples/geeks_server.o: socket_examples/geeks_server.c.o
+.PHONY : socket_examples/geeks_server.o
+
+# target to build an object file
+socket_examples/geeks_server.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CS392.dir/build.make CMakeFiles/CS392.dir/socket_examples/geeks_server.c.o
+.PHONY : socket_examples/geeks_server.c.o
+
+socket_examples/geeks_server.i: socket_examples/geeks_server.c.i
+.PHONY : socket_examples/geeks_server.i
+
+# target to preprocess a source file
+socket_examples/geeks_server.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CS392.dir/build.make CMakeFiles/CS392.dir/socket_examples/geeks_server.c.i
+.PHONY : socket_examples/geeks_server.c.i
+
+socket_examples/geeks_server.s: socket_examples/geeks_server.c.s
+.PHONY : socket_examples/geeks_server.s
+
+# target to generate assembly for a file
+socket_examples/geeks_server.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CS392.dir/build.make CMakeFiles/CS392.dir/socket_examples/geeks_server.c.s
+.PHONY : socket_examples/geeks_server.c.s
 
 # Help Target
 help:
@@ -861,6 +1029,12 @@ help:
 	@echo "... hw6/hw6.o"
 	@echo "... hw6/hw6.i"
 	@echo "... hw6/hw6.s"
+	@echo "... hw7/client.o"
+	@echo "... hw7/client.i"
+	@echo "... hw7/client.s"
+	@echo "... hw7/server.o"
+	@echo "... hw7/server.i"
+	@echo "... hw7/server.s"
 	@echo "... labs/lab2_fn_pointers.o"
 	@echo "... labs/lab2_fn_pointers.i"
 	@echo "... labs/lab2_fn_pointers.s"
@@ -891,9 +1065,24 @@ help:
 	@echo "... labs/lab9/lab9_findserver.o"
 	@echo "... labs/lab9/lab9_findserver.i"
 	@echo "... labs/lab9/lab9_findserver.s"
+	@echo "... socket_examples/BrownyLin_client.o"
+	@echo "... socket_examples/BrownyLin_client.i"
+	@echo "... socket_examples/BrownyLin_client.s"
+	@echo "... socket_examples/BrownyLin_server.o"
+	@echo "... socket_examples/BrownyLin_server.i"
+	@echo "... socket_examples/BrownyLin_server.s"
 	@echo "... socket_examples/binarytides_client.o"
 	@echo "... socket_examples/binarytides_client.i"
 	@echo "... socket_examples/binarytides_client.s"
+	@echo "... socket_examples/binarytides_server.o"
+	@echo "... socket_examples/binarytides_server.i"
+	@echo "... socket_examples/binarytides_server.s"
+	@echo "... socket_examples/geeks_client.o"
+	@echo "... socket_examples/geeks_client.i"
+	@echo "... socket_examples/geeks_client.s"
+	@echo "... socket_examples/geeks_server.o"
+	@echo "... socket_examples/geeks_server.i"
+	@echo "... socket_examples/geeks_server.s"
 .PHONY : help
 
 

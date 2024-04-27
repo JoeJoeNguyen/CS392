@@ -461,6 +461,104 @@ CMakeFiles/CS392.dir/socket_examples/binarytides_client.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/CS392.dir/socket_examples/binarytides_client.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/joenguyen/CS392/socket_examples/binarytides_client.c -o CMakeFiles/CS392.dir/socket_examples/binarytides_client.c.s
 
+CMakeFiles/CS392.dir/socket_examples/binarytides_server.c.o: CMakeFiles/CS392.dir/flags.make
+CMakeFiles/CS392.dir/socket_examples/binarytides_server.c.o: /Users/joenguyen/CS392/socket_examples/binarytides_server.c
+CMakeFiles/CS392.dir/socket_examples/binarytides_server.c.o: CMakeFiles/CS392.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/joenguyen/CS392/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/CS392.dir/socket_examples/binarytides_server.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/CS392.dir/socket_examples/binarytides_server.c.o -MF CMakeFiles/CS392.dir/socket_examples/binarytides_server.c.o.d -o CMakeFiles/CS392.dir/socket_examples/binarytides_server.c.o -c /Users/joenguyen/CS392/socket_examples/binarytides_server.c
+
+CMakeFiles/CS392.dir/socket_examples/binarytides_server.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/CS392.dir/socket_examples/binarytides_server.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/joenguyen/CS392/socket_examples/binarytides_server.c > CMakeFiles/CS392.dir/socket_examples/binarytides_server.c.i
+
+CMakeFiles/CS392.dir/socket_examples/binarytides_server.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/CS392.dir/socket_examples/binarytides_server.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/joenguyen/CS392/socket_examples/binarytides_server.c -o CMakeFiles/CS392.dir/socket_examples/binarytides_server.c.s
+
+CMakeFiles/CS392.dir/socket_examples/BrownyLin_server.c.o: CMakeFiles/CS392.dir/flags.make
+CMakeFiles/CS392.dir/socket_examples/BrownyLin_server.c.o: /Users/joenguyen/CS392/socket_examples/BrownyLin_server.c
+CMakeFiles/CS392.dir/socket_examples/BrownyLin_server.c.o: CMakeFiles/CS392.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/joenguyen/CS392/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/CS392.dir/socket_examples/BrownyLin_server.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/CS392.dir/socket_examples/BrownyLin_server.c.o -MF CMakeFiles/CS392.dir/socket_examples/BrownyLin_server.c.o.d -o CMakeFiles/CS392.dir/socket_examples/BrownyLin_server.c.o -c /Users/joenguyen/CS392/socket_examples/BrownyLin_server.c
+
+CMakeFiles/CS392.dir/socket_examples/BrownyLin_server.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/CS392.dir/socket_examples/BrownyLin_server.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/joenguyen/CS392/socket_examples/BrownyLin_server.c > CMakeFiles/CS392.dir/socket_examples/BrownyLin_server.c.i
+
+CMakeFiles/CS392.dir/socket_examples/BrownyLin_server.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/CS392.dir/socket_examples/BrownyLin_server.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/joenguyen/CS392/socket_examples/BrownyLin_server.c -o CMakeFiles/CS392.dir/socket_examples/BrownyLin_server.c.s
+
+CMakeFiles/CS392.dir/socket_examples/BrownyLin_client.c.o: CMakeFiles/CS392.dir/flags.make
+CMakeFiles/CS392.dir/socket_examples/BrownyLin_client.c.o: /Users/joenguyen/CS392/socket_examples/BrownyLin_client.c
+CMakeFiles/CS392.dir/socket_examples/BrownyLin_client.c.o: CMakeFiles/CS392.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/joenguyen/CS392/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object CMakeFiles/CS392.dir/socket_examples/BrownyLin_client.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/CS392.dir/socket_examples/BrownyLin_client.c.o -MF CMakeFiles/CS392.dir/socket_examples/BrownyLin_client.c.o.d -o CMakeFiles/CS392.dir/socket_examples/BrownyLin_client.c.o -c /Users/joenguyen/CS392/socket_examples/BrownyLin_client.c
+
+CMakeFiles/CS392.dir/socket_examples/BrownyLin_client.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/CS392.dir/socket_examples/BrownyLin_client.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/joenguyen/CS392/socket_examples/BrownyLin_client.c > CMakeFiles/CS392.dir/socket_examples/BrownyLin_client.c.i
+
+CMakeFiles/CS392.dir/socket_examples/BrownyLin_client.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/CS392.dir/socket_examples/BrownyLin_client.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/joenguyen/CS392/socket_examples/BrownyLin_client.c -o CMakeFiles/CS392.dir/socket_examples/BrownyLin_client.c.s
+
+CMakeFiles/CS392.dir/hw7/client.c.o: CMakeFiles/CS392.dir/flags.make
+CMakeFiles/CS392.dir/hw7/client.c.o: /Users/joenguyen/CS392/hw7/client.c
+CMakeFiles/CS392.dir/hw7/client.c.o: CMakeFiles/CS392.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/joenguyen/CS392/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object CMakeFiles/CS392.dir/hw7/client.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/CS392.dir/hw7/client.c.o -MF CMakeFiles/CS392.dir/hw7/client.c.o.d -o CMakeFiles/CS392.dir/hw7/client.c.o -c /Users/joenguyen/CS392/hw7/client.c
+
+CMakeFiles/CS392.dir/hw7/client.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/CS392.dir/hw7/client.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/joenguyen/CS392/hw7/client.c > CMakeFiles/CS392.dir/hw7/client.c.i
+
+CMakeFiles/CS392.dir/hw7/client.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/CS392.dir/hw7/client.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/joenguyen/CS392/hw7/client.c -o CMakeFiles/CS392.dir/hw7/client.c.s
+
+CMakeFiles/CS392.dir/hw7/server.c.o: CMakeFiles/CS392.dir/flags.make
+CMakeFiles/CS392.dir/hw7/server.c.o: /Users/joenguyen/CS392/hw7/server.c
+CMakeFiles/CS392.dir/hw7/server.c.o: CMakeFiles/CS392.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/joenguyen/CS392/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object CMakeFiles/CS392.dir/hw7/server.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/CS392.dir/hw7/server.c.o -MF CMakeFiles/CS392.dir/hw7/server.c.o.d -o CMakeFiles/CS392.dir/hw7/server.c.o -c /Users/joenguyen/CS392/hw7/server.c
+
+CMakeFiles/CS392.dir/hw7/server.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/CS392.dir/hw7/server.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/joenguyen/CS392/hw7/server.c > CMakeFiles/CS392.dir/hw7/server.c.i
+
+CMakeFiles/CS392.dir/hw7/server.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/CS392.dir/hw7/server.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/joenguyen/CS392/hw7/server.c -o CMakeFiles/CS392.dir/hw7/server.c.s
+
+CMakeFiles/CS392.dir/socket_examples/geeks_server.c.o: CMakeFiles/CS392.dir/flags.make
+CMakeFiles/CS392.dir/socket_examples/geeks_server.c.o: /Users/joenguyen/CS392/socket_examples/geeks_server.c
+CMakeFiles/CS392.dir/socket_examples/geeks_server.c.o: CMakeFiles/CS392.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/joenguyen/CS392/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object CMakeFiles/CS392.dir/socket_examples/geeks_server.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/CS392.dir/socket_examples/geeks_server.c.o -MF CMakeFiles/CS392.dir/socket_examples/geeks_server.c.o.d -o CMakeFiles/CS392.dir/socket_examples/geeks_server.c.o -c /Users/joenguyen/CS392/socket_examples/geeks_server.c
+
+CMakeFiles/CS392.dir/socket_examples/geeks_server.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/CS392.dir/socket_examples/geeks_server.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/joenguyen/CS392/socket_examples/geeks_server.c > CMakeFiles/CS392.dir/socket_examples/geeks_server.c.i
+
+CMakeFiles/CS392.dir/socket_examples/geeks_server.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/CS392.dir/socket_examples/geeks_server.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/joenguyen/CS392/socket_examples/geeks_server.c -o CMakeFiles/CS392.dir/socket_examples/geeks_server.c.s
+
+CMakeFiles/CS392.dir/socket_examples/geeks_client.c.o: CMakeFiles/CS392.dir/flags.make
+CMakeFiles/CS392.dir/socket_examples/geeks_client.c.o: /Users/joenguyen/CS392/socket_examples/geeks_client.c
+CMakeFiles/CS392.dir/socket_examples/geeks_client.c.o: CMakeFiles/CS392.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/joenguyen/CS392/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object CMakeFiles/CS392.dir/socket_examples/geeks_client.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/CS392.dir/socket_examples/geeks_client.c.o -MF CMakeFiles/CS392.dir/socket_examples/geeks_client.c.o.d -o CMakeFiles/CS392.dir/socket_examples/geeks_client.c.o -c /Users/joenguyen/CS392/socket_examples/geeks_client.c
+
+CMakeFiles/CS392.dir/socket_examples/geeks_client.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/CS392.dir/socket_examples/geeks_client.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/joenguyen/CS392/socket_examples/geeks_client.c > CMakeFiles/CS392.dir/socket_examples/geeks_client.c.i
+
+CMakeFiles/CS392.dir/socket_examples/geeks_client.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/CS392.dir/socket_examples/geeks_client.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/joenguyen/CS392/socket_examples/geeks_client.c -o CMakeFiles/CS392.dir/socket_examples/geeks_client.c.s
+
 # Object files for target CS392
 CS392_OBJECTS = \
 "CMakeFiles/CS392.dir/hw2/hw2_starter_code/submission/bubble.c.o" \
@@ -490,7 +588,14 @@ CS392_OBJECTS = \
 "CMakeFiles/CS392.dir/labs/lab8/lab8_pipe_add.c.o" \
 "CMakeFiles/CS392.dir/hw6/hw6.c.o" \
 "CMakeFiles/CS392.dir/labs/lab9/lab9_findserver.c.o" \
-"CMakeFiles/CS392.dir/socket_examples/binarytides_client.c.o"
+"CMakeFiles/CS392.dir/socket_examples/binarytides_client.c.o" \
+"CMakeFiles/CS392.dir/socket_examples/binarytides_server.c.o" \
+"CMakeFiles/CS392.dir/socket_examples/BrownyLin_server.c.o" \
+"CMakeFiles/CS392.dir/socket_examples/BrownyLin_client.c.o" \
+"CMakeFiles/CS392.dir/hw7/client.c.o" \
+"CMakeFiles/CS392.dir/hw7/server.c.o" \
+"CMakeFiles/CS392.dir/socket_examples/geeks_server.c.o" \
+"CMakeFiles/CS392.dir/socket_examples/geeks_client.c.o"
 
 # External object files for target CS392
 CS392_EXTERNAL_OBJECTS =
@@ -523,9 +628,16 @@ CS392: CMakeFiles/CS392.dir/labs/lab8/lab8_pipe_add.c.o
 CS392: CMakeFiles/CS392.dir/hw6/hw6.c.o
 CS392: CMakeFiles/CS392.dir/labs/lab9/lab9_findserver.c.o
 CS392: CMakeFiles/CS392.dir/socket_examples/binarytides_client.c.o
+CS392: CMakeFiles/CS392.dir/socket_examples/binarytides_server.c.o
+CS392: CMakeFiles/CS392.dir/socket_examples/BrownyLin_server.c.o
+CS392: CMakeFiles/CS392.dir/socket_examples/BrownyLin_client.c.o
+CS392: CMakeFiles/CS392.dir/hw7/client.c.o
+CS392: CMakeFiles/CS392.dir/hw7/server.c.o
+CS392: CMakeFiles/CS392.dir/socket_examples/geeks_server.c.o
+CS392: CMakeFiles/CS392.dir/socket_examples/geeks_client.c.o
 CS392: CMakeFiles/CS392.dir/build.make
 CS392: CMakeFiles/CS392.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/joenguyen/CS392/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Linking C executable CS392"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/joenguyen/CS392/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Linking C executable CS392"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/CS392.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

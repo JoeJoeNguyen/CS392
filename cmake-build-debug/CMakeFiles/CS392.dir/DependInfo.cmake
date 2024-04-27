@@ -25,6 +25,8 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/joenguyen/CS392/hw5/msh.c" "CMakeFiles/CS392.dir/hw5/msh.c.o" "gcc" "CMakeFiles/CS392.dir/hw5/msh.c.o.d"
   "/Users/joenguyen/CS392/hw5/sighandler.c" "CMakeFiles/CS392.dir/hw5/sighandler.c.o" "gcc" "CMakeFiles/CS392.dir/hw5/sighandler.c.o.d"
   "/Users/joenguyen/CS392/hw6/hw6.c" "CMakeFiles/CS392.dir/hw6/hw6.c.o" "gcc" "CMakeFiles/CS392.dir/hw6/hw6.c.o.d"
+  "/Users/joenguyen/CS392/hw7/client.c" "CMakeFiles/CS392.dir/hw7/client.c.o" "gcc" "CMakeFiles/CS392.dir/hw7/client.c.o.d"
+  "/Users/joenguyen/CS392/hw7/server.c" "CMakeFiles/CS392.dir/hw7/server.c.o" "gcc" "CMakeFiles/CS392.dir/hw7/server.c.o.d"
   "/Users/joenguyen/CS392/labs/lab2_fn_pointers.c" "CMakeFiles/CS392.dir/labs/lab2_fn_pointers.c.o" "gcc" "CMakeFiles/CS392.dir/labs/lab2_fn_pointers.c.o.d"
   "/Users/joenguyen/CS392/labs/lab2_fn_pointers (1).c" "CMakeFiles/CS392.dir/labs/lab2_fn_pointers_(1).c.o" "gcc" "CMakeFiles/CS392.dir/labs/lab2_fn_pointers_(1).c.o.d"
   "/Users/joenguyen/CS392/labs/lab3_files.c" "CMakeFiles/CS392.dir/labs/lab3_files.c.o" "gcc" "CMakeFiles/CS392.dir/labs/lab3_files.c.o.d"
@@ -35,7 +37,12 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/joenguyen/CS392/labs/lab7/lab7_prompt.c" "CMakeFiles/CS392.dir/labs/lab7/lab7_prompt.c.o" "gcc" "CMakeFiles/CS392.dir/labs/lab7/lab7_prompt.c.o.d"
   "/Users/joenguyen/CS392/labs/lab8/lab8_pipe_add.c" "CMakeFiles/CS392.dir/labs/lab8/lab8_pipe_add.c.o" "gcc" "CMakeFiles/CS392.dir/labs/lab8/lab8_pipe_add.c.o.d"
   "/Users/joenguyen/CS392/labs/lab9/lab9_findserver.c" "CMakeFiles/CS392.dir/labs/lab9/lab9_findserver.c.o" "gcc" "CMakeFiles/CS392.dir/labs/lab9/lab9_findserver.c.o.d"
+  "/Users/joenguyen/CS392/socket_examples/BrownyLin_client.c" "CMakeFiles/CS392.dir/socket_examples/BrownyLin_client.c.o" "gcc" "CMakeFiles/CS392.dir/socket_examples/BrownyLin_client.c.o.d"
+  "/Users/joenguyen/CS392/socket_examples/BrownyLin_server.c" "CMakeFiles/CS392.dir/socket_examples/BrownyLin_server.c.o" "gcc" "CMakeFiles/CS392.dir/socket_examples/BrownyLin_server.c.o.d"
   "/Users/joenguyen/CS392/socket_examples/binarytides_client.c" "CMakeFiles/CS392.dir/socket_examples/binarytides_client.c.o" "gcc" "CMakeFiles/CS392.dir/socket_examples/binarytides_client.c.o.d"
+  "/Users/joenguyen/CS392/socket_examples/binarytides_server.c" "CMakeFiles/CS392.dir/socket_examples/binarytides_server.c.o" "gcc" "CMakeFiles/CS392.dir/socket_examples/binarytides_server.c.o.d"
+  "/Users/joenguyen/CS392/socket_examples/geeks_client.c" "CMakeFiles/CS392.dir/socket_examples/geeks_client.c.o" "gcc" "CMakeFiles/CS392.dir/socket_examples/geeks_client.c.o.d"
+  "/Users/joenguyen/CS392/socket_examples/geeks_server.c" "CMakeFiles/CS392.dir/socket_examples/geeks_server.c.o" "gcc" "CMakeFiles/CS392.dir/socket_examples/geeks_server.c.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.
