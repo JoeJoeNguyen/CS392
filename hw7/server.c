@@ -7,11 +7,13 @@
 #include <unistd.h>
 #include <time.h>
 #include <limits.h>
+#include <stdbool.h>
 
 #define MAX_BUFFER 2000
 
 int main (int argc, char *argv[]){
-     static int min = INT_MAX;
+    bool first_num_received = true;
+    int min;
     if(argc < 2) {
         printf("Please provide a port number.\n");
         return 1;
@@ -85,13 +87,18 @@ int main (int argc, char *argv[]){
             }
         } else {
             // If client sends an integer, maintain the minimum value and send it back
-
             int num = atoi(client_message);
-            if(num < min) {
+            printf("Recieved number: %d\n", num);
+            if(first_num_received) {
+                min = num;
+                first_num_received = false;
+            } else if(num < min) {
                 min = num;
             }
-            char min_str[12];
+            printf("Current minimum: %d\n", min); // Debugging line
+            char min_str[2000];
             sprintf(min_str, "%d", min);
+            printf("min_str: %s\n", min_str);
             write(client_sock , min_str , strlen(min_str));
         }
     }
