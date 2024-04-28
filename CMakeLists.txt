@@ -54,4 +54,6 @@ add_executable(CS392
         hw7/server.c
         socket_examples/geeks_server.c
         socket_examples/geeks_client.c
+        hw7v2/server.c
+        hw7v2/client.c
 )

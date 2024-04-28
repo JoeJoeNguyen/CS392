@@ -1,3 +1,3 @@
-/Users/joenguyen/CS392/cmake-build-debug/CMakeFiles/CS392.dir
-/Users/joenguyen/CS392/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/joenguyen/CS392/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/joejoe/github/CS392/cmake-build-debug/CMakeFiles/CS392.dir
+/home/joejoe/github/CS392/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/joejoe/github/CS392/cmake-build-debug/CMakeFiles/rebuild_cache.dir
