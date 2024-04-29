@@ -60,26 +60,26 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-g -fdiagnostics-color=always"
+					"fragment" : "-g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -fcolor-diagnostics"
 				}
 			],
 			"includes" : 
 			[
 				{
 					"backtrace" : 2,
-					"path" : "/home/joejoe/github/CS392/hw2/hw2_starter_code"
+					"path" : "/Users/joenguyen/CS392/hw2/hw2_starter_code"
 				},
 				{
 					"backtrace" : 3,
-					"path" : "/home/joejoe/github/CS392/hw3"
+					"path" : "/Users/joenguyen/CS392/hw3"
 				},
 				{
 					"backtrace" : 4,
-					"path" : "/home/joejoe/github/CS392/hw3/submission"
+					"path" : "/Users/joenguyen/CS392/hw3/submission"
 				},
 				{
 					"backtrace" : 5,
-					"path" : "/home/joejoe/github/CS392/hw3/submission2.o"
+					"path" : "/Users/joenguyen/CS392/hw3/submission2.o"
 				}
 			],
 			"language" : "C",

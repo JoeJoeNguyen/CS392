@@ -1,3 +1,6 @@
+
+
+
 #include <sys/types.h>
 #include <sys/socket.h>
 #include <netdb.h>
@@ -67,7 +70,8 @@ int main(int argc, char *argv[]) {
     while(1) {
         printf("Enter an integer or 'quit' to terminate: ");
         scanf("%s", message);
-
+        // Add a newline character at the end of the message
+        strcat(message, "\n");
         // Send some data
         if(send(sock, message, strlen(message), 0) < 0) {
             puts("Send failed");
@@ -75,16 +79,18 @@ int main(int argc, char *argv[]) {
         }
 
         // If user types "quit", terminate the client
-        if(strcmp(message, "quit") == 0) {
+        if(strcmp(message, "quit\n") == 0) {
             break;
         }
+        // Clear the server_reply buffer
+        memset(server_reply, 0, sizeof(server_reply));
 
         // Receive a reply from the server
-        if(recv(sock, server_reply, MAX_BUFFER, 0) < 0) {
+        if(read(sock, server_reply, MAX_BUFFER) < 0) {
             puts("recv failed");
             break;
         }
-
+        //int server_reply_int = atoi(server_reply);
         printf("Minimum so far: %s\n", server_reply);
     }
 
